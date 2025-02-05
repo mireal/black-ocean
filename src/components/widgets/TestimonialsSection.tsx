@@ -110,7 +110,7 @@ function TestimonialsSection() {
             desktopS: "54px",
             desktopM: "64px",
           }}
-          fontWeight="bold"
+          fontWeight="600"
           textTransform="uppercase"
           mb="40px"
         >

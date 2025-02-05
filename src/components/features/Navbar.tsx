@@ -26,7 +26,7 @@ function Navbar() {
             variant="body1"
             color="primary"
             fontSize={14}
-            fontWeight={500}
+            fontWeight={600}
           >
             EN / CS
           </Typography>
@@ -73,7 +73,7 @@ function Navbar() {
             justifyContent: "flex-end",
           }}
         >
-          <Typography variant="h5">
+          <Typography variant="h5" fontWeight='600'>
             <Link component={"a"} sx={{ textDecoration: "none" }}>
               (+420) 773 635 962
             </Link>

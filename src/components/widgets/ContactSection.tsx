@@ -26,7 +26,7 @@ function ContactSection() {
               desktopS: "104px",
               desktopM: "114px",
             }}
-            fontWeight="bold"
+            fontWeight="600"
             lineHeight="80%"
             letterSpacing="-4px"
             textTransform="uppercase"

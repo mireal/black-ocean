@@ -70,7 +70,7 @@ function TestimonialBlock({ content }: { content: TestimonialContent }) {
                     variant="h6"
                     color="primary.main"
                     fontSize="18px"
-                    fontWeight="bold"
+                    fontWeight="600"
                     lineHeight="120%"
                   >
                     {content.author.name}
@@ -80,7 +80,7 @@ function TestimonialBlock({ content }: { content: TestimonialContent }) {
                     variant="h6"
                     color="primary.contrastText"
                     fontSize="14px"
-                    fontWeight="bold"
+                    fontWeight="600"
                     lineHeight="130%"
                   >
                     {content.author.job}
@@ -92,7 +92,7 @@ function TestimonialBlock({ content }: { content: TestimonialContent }) {
               <Typography
                 color="primary.contrastText"
                 fontSize="24px"
-                fontWeight="bold"
+                fontWeight="600"
                 lineHeight="130%"
               >
                 {content.about}
@@ -105,7 +105,7 @@ function TestimonialBlock({ content }: { content: TestimonialContent }) {
             <Typography
               color="primary.light"
               fontSize="16px"
-              fontWeight="bold"
+              fontWeight="600"
               lineHeight="125%"
             >
               <List>{testimonials}</List>

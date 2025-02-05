@@ -23,7 +23,7 @@ function AboutSection() {
             desktopS: "54px",
             desktopM: "64px",
           }}
-          fontWeight="bold"
+          fontWeight="600"
           textAlign="center"
           textTransform="uppercase"
           paddingBottom={{ mobileP: "15px", mobileL: "20px", desktopS: "0" }}
@@ -40,7 +40,6 @@ function AboutSection() {
           spacing={{ mobileP: "15px", tablet: "20px", desktopM: "60px" }}
         >
           {/* image */}
-          {/* height={{mobileP:'250px', tablet:'417px', base: '542px', desktopS:'570px'}} */}
           <Grid2
             offset={{ mobileP: 0, desktopS: 1 }}
             size={1}
@@ -50,7 +49,7 @@ function AboutSection() {
               desktopS: "542px",
               desktopM: "570px",
             }}
-            bottom={{ desktopS: "54px", desktopM: "64px" }}
+            bottom={{ desktopS: "50px", desktopM: "60px" }}
             sx={{
               position: "relative",
               "& img": {
@@ -71,7 +70,7 @@ function AboutSection() {
               variant="body1"
               color="primary.light"
               fontSize={{ mobileP: "20px", tablet: "24px" }}
-              fontWeight="bold"
+              fontWeight="600"
               textTransform="uppercase"
               textAlign={{ mobileP: "center", tablet: "left" }}
             >

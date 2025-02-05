@@ -101,7 +101,7 @@ function NumbersSection() {
               variant="body1"
               color="primary.light"
               fontSize={{ mobileP: "20px", tablet: "24px" }}
-              fontWeight="bold"
+              fontWeight="600"
               textTransform="uppercase"
             >
               When you work with us, you’re choosing a team that values

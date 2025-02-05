@@ -8,7 +8,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
   padding: "18px 50px",
 
   fontSize: "18px",
-  fontWeight: "bold",
+  fontWeight: "600",
 
   "&:hover": {
     backgroundColor: "black",

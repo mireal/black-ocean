@@ -27,7 +27,7 @@ function WhySection() {
               desktopS: "54px",
               desktopM: "64px",
             }}
-            fontWeight="bold"
+            fontWeight="600"
             textTransform="uppercase"
             paddingBottom={{ mobileP: "15px", mobileL: "20px", desktopS: "0" }}
           >
@@ -47,7 +47,7 @@ function WhySection() {
                 variant="body1"
                 color="primary.light"
                 fontSize={{ mobileP: "20px", tablet: "24px" }}
-                fontWeight="bold"
+                fontWeight="600"
                 textTransform="uppercase"
               >
                 Expert-driven solutions, proven industry leadership, and
@@ -78,7 +78,7 @@ function WhySection() {
                     <Typography
                       variant="body1"
                       fontSize="18px"
-                      fontWeight="bold"
+                      fontWeight="600"
                       color="primary.main"
                     >
                       Technical Divercity
@@ -121,7 +121,7 @@ function WhySection() {
                     <Typography
                       variant="body1"
                       fontSize="18px"
-                      fontWeight="bold"
+                      fontWeight="600"
                       color="primary.main"
                     >
                       Profesional Team
@@ -165,7 +165,7 @@ function WhySection() {
                     <Typography
                       variant="body1"
                       fontSize="18px"
-                      fontWeight="bold"
+                      fontWeight="600"
                       color="primary.main"
                     >
                       Sphere Leader
@@ -208,7 +208,7 @@ function WhySection() {
                     <Typography
                       variant="body1"
                       fontSize="18px"
-                      fontWeight="bold"
+                      fontWeight="600"
                       color="primary.main"
                     >
                       Full Project Support

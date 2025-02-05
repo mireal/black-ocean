@@ -9,7 +9,7 @@ export default function FooterContactLinks() {
           variant="h5"
           color="primary.contrastText"
           fontSize="24px"
-          fontWeight="bold"
+          fontWeight="600"
           textTransform="uppercase"
         >
           <Stack

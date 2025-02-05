@@ -17,7 +17,7 @@ export default function FooterInfoLinks() {
           variant="h5"
           color="primary.dark"
           fontSize="16px"
-          fontWeight="bold"
+          fontWeight="600"
           noWrap
         >
           <Stack

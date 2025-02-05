@@ -28,7 +28,7 @@ function StepsSection() {
             desktopS: "54px",
             desktopM: "64px",
           }}
-          fontWeight="bold"
+          fontWeight="600"
           textTransform="uppercase"
           paddingBottom={{ mobileP: "15px", mobileL: "20px", desktopS: "0" }}
         >
@@ -45,7 +45,7 @@ function StepsSection() {
               variant="body1"
               color="primary.light"
               fontSize={{ mobileP: "20px", tablet: "24px" }}
-              fontWeight="bold"
+              fontWeight="600"
               textTransform="uppercase"
             >
               Over the long experience of working with clients, we have built

@@ -24,6 +24,9 @@ const theme = createTheme({
       dark: "#505050",
       contrastText: "#C3C3C3",
     },
+    error: {
+      main: "#F2F2F2"
+    },
     background: {
       default: "#070B30",
     },
@@ -43,17 +46,17 @@ const theme = createTheme({
     fontFamily: '"Open Sans", sans-serif',
     h2: {
       fontSize: "22px",
-      fontWeight: "bold",
+      fontWeight: "600",
     },
     h3: {
       color: "white",
       fontSize: "22px",
-      fontWeight: "bold",
+      fontWeight: "600",
     },
 
     subtitle1: {
       fontSize: "16px",
-      fontWeight: "bold",
+      fontWeight: "600",
     },
   },
 });

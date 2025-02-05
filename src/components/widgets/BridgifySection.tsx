@@ -32,7 +32,7 @@ function BridgifySection() {
             desktopS: "54px",
             desktopM: "64px",
           }}
-          fontWeight="bold"
+          fontWeight="600"
           textTransform="uppercase"
         >
           Bridgify: Simplify Your Online Business
@@ -45,7 +45,7 @@ function BridgifySection() {
               variant="body1"
               color="primary.light"
               fontSize={{ mobileP: "20px", tablet: "24px" }}
-              fontWeight="bold"
+              fontWeight="600"
               textTransform="uppercase"
             >
               At Black Ocean, we not only deliver tailored web traffic and

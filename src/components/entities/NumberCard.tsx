@@ -14,7 +14,7 @@ function NumberCard({ content }: { content: NumberCardContent }) {
         <Typography
           variant="h2"
           fontSize="64px"
-          fontWeight="bold"
+          fontWeight="600"
           color="primary.main"
           textTransform="uppercase"
           mb="20px"
@@ -25,7 +25,7 @@ function NumberCard({ content }: { content: NumberCardContent }) {
         <Typography
           variant="h3"
           fontSize="22px"
-          fontWeight="bold"
+          fontWeight="600"
           color="primary.main"
           textTransform="uppercase"
           mb="40px"

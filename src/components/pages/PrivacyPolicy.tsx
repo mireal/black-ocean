@@ -255,7 +255,7 @@ export default function PrivacyPolicy() {
               variant="h4"
               fontSize="18px"
               color="primary.main"
-              fontWeight="bold"
+              fontWeight="600"
             >
               Contacting us
             </Typography>
@@ -275,7 +275,7 @@ export default function PrivacyPolicy() {
               variant="h4"
               fontSize="18px"
               color="primary.main"
-              fontWeight="bold"
+              fontWeight="600"
             >
               Processing of Personal Data when using our services
             </Typography>
@@ -295,7 +295,7 @@ export default function PrivacyPolicy() {
               variant="h4"
               fontSize="18px"
               color="primary.main"
-              fontWeight="bold"
+              fontWeight="600"
             >
               Administration, financial accounting, office organization, contact
               management
@@ -324,7 +324,7 @@ export default function PrivacyPolicy() {
               variant="h4"
               fontSize="18px"
               color="primary.main"
-              fontWeight="bold"
+              fontWeight="600"
             >
               Administration, financial accounting, office organization, contact
               management
@@ -353,7 +353,7 @@ export default function PrivacyPolicy() {
               variant="h4"
               fontSize="18px"
               color="primary.main"
-              fontWeight="bold"
+              fontWeight="600"
             >
               Log files
             </Typography>
@@ -383,7 +383,7 @@ export default function PrivacyPolicy() {
               variant="h4"
               fontSize="18px"
               color="primary.main"
-              fontWeight="bold"
+              fontWeight="600"
             >
               Use of cookies
             </Typography>

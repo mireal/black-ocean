@@ -13,7 +13,7 @@ const InputField = styled(Input)(({ theme }) => ({
   width: "100%",
 
   fontSize: "16px",
-  fontWeight: "bold",
+  fontWeight: "600",
 
   "&:hover, & fieldset": {
     borderColor: theme.palette.primary.main,

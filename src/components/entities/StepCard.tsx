@@ -20,7 +20,7 @@ function StepCard({ content }: { content: StepCardContent }) {
           variant="h3"
           color="primary.main"
           fontSize="44px"
-          fontWeight="bold"
+          fontWeight="600"
           textTransform="uppercase"
         >
           {content.title}
@@ -31,7 +31,7 @@ function StepCard({ content }: { content: StepCardContent }) {
             variant="h4"
             color="primary.main"
             fontSize="22px"
-            fontWeight="bold"
+            fontWeight="600"
             lineHeight="120%"
           >
             {content.subtitle}
