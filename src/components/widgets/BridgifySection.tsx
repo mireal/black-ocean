@@ -1,4 +1,4 @@
-import { Box, Grid2, Typography } from "@mui/material";
+import { Box, Divider, Grid2, Typography } from "@mui/material";
 import StyledButton from "../shared/StyledButton";
 import SouthEastSharpIcon from "@mui/icons-material/SouthEastSharp";
 
@@ -20,6 +20,7 @@ function BridgifySection() {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
+          position: 'relative'
         }}
       >
         {/* title */}
@@ -41,6 +42,17 @@ function BridgifySection() {
         {/* content header */}
         <Grid2 container columns={6} paddingTop="20px">
           <Grid2 offset={{ desktopS: 2 }}>
+
+            {/* accent line */}
+            <Divider orientation="vertical"
+              sx={{
+                position: 'absolute',
+                display: { mobileP: 'none', desktopS: 'block' },
+                top: 0,
+                height: '100%'
+              }}
+            />
+
             <Typography
               variant="body1"
               color="primary.light"
@@ -97,6 +109,23 @@ function BridgifySection() {
             </Typography>
           </Grid2>
         </Grid2>
+
+        {/* accent line left border*/}
+        <Divider orientation="vertical"
+          sx={{
+            position: 'absolute',
+            display: { mobileP: 'none', desktopS: 'block' },
+            top: 0,
+            left: {
+              mobileP: "10px",
+              mobileL: "16px",
+              tablet: "20px",
+              desktopS: "40px",
+            },
+            height: '100%'
+          }}
+        />
+
       </Box>
     </>
   );
