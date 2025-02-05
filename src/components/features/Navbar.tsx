@@ -7,9 +7,8 @@ function Navbar() {
       <Grid2
         container
         wrap="nowrap"
-        
         paddingTop={{ mobileP: 0, desktopS: "20px" }}
-        height={{mobileP:'82px', desktopS:'166px'}}
+        height={{ mobileP: "82px", desktopS: "166px" }}
       >
         <Grid2
           size={{ mobileP: 6, desktopS: 3 }}
@@ -74,8 +73,12 @@ function Navbar() {
             justifyContent: "flex-end",
           }}
         >
-          <Typography variant="h5" fontWeight='600'>
-            <Link component={"a"} href="tel:+420773635962" sx={{ textDecoration: "none" }}>
+          <Typography variant="h5" fontWeight="600">
+            <Link
+              component={"a"}
+              href="tel:+420773635962"
+              sx={{ textDecoration: "none" }}
+            >
               (+420) 773 635 962
             </Link>
           </Typography>

@@ -4,14 +4,14 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 function HeroContent() {
   return (
     <>
-      <Box >
+      <Box>
         {/* title */}
         <Typography
           variant="h1"
           color="primary.main"
           textTransform="uppercase"
           fontSize={{ mobileP: 32, tablet: 44, desktopS: 54, DesktopM: 64 }}
-          fontWeight='450'
+          fontWeight="450"
           paddingTop={{
             mobileP: "40px",
             mobileL: "60px",

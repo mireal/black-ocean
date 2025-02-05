@@ -20,7 +20,7 @@ function BridgifySection() {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          position: 'relative'
+          position: "relative",
         }}
       >
         {/* title */}
@@ -42,14 +42,14 @@ function BridgifySection() {
         {/* content header */}
         <Grid2 container columns={6} paddingTop="20px">
           <Grid2 offset={{ desktopS: 2 }}>
-
             {/* accent line */}
-            <Divider orientation="vertical"
+            <Divider
+              orientation="vertical"
               sx={{
-                position: 'absolute',
-                display: { mobileP: 'none', desktopS: 'block' },
+                position: "absolute",
+                display: { mobileP: "none", desktopS: "block" },
                 top: 0,
-                height: '100%'
+                height: "100%",
               }}
             />
 
@@ -111,10 +111,11 @@ function BridgifySection() {
         </Grid2>
 
         {/* accent line left border*/}
-        <Divider orientation="vertical"
+        <Divider
+          orientation="vertical"
           sx={{
-            position: 'absolute',
-            display: { mobileP: 'none', desktopS: 'block' },
+            position: "absolute",
+            display: { mobileP: "none", desktopS: "block" },
             top: 0,
             left: {
               mobileP: "10px",
@@ -122,10 +123,9 @@ function BridgifySection() {
               tablet: "20px",
               desktopS: "40px",
             },
-            height: '100%'
+            height: "100%",
           }}
         />
-
       </Box>
     </>
   );
