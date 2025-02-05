@@ -1,20 +1,33 @@
-import { Typography, Link, Grid2, List, ListItem } from '@mui/material'
-import BurgerButtonMenu from './BurgerButton'
-import NavbarLogo from '../entities/NavbarLogo'
+import { Typography, Link, Grid2, List, ListItem } from "@mui/material";
+import BurgerButtonMenu from "./BurgerButton";
+import NavbarLogo from "../entities/NavbarLogo";
 function Navbar() {
   return (
     <>
-      <Grid2 container wrap="nowrap" paddingX={{ desktopS: 2 }} paddingTop="20px">
+      <Grid2
+        container
+        wrap="nowrap"
+        paddingX={{ desktopS: 2 }}
+        paddingTop="20px"
+      >
         <Grid2
           size={{ mobileP: 6, desktopS: 3 }}
-          alignSelf={{ mobileP: 'center', desktopS: 'start' }}
+          alignSelf={{ mobileP: "center", desktopS: "start" }}
         >
-          <NavbarLogo/>
+          <NavbarLogo />
         </Grid2>
 
         {/* switch language */}
-        <Grid2 size={3} sx={{ display: { mobileP: 'none', desktopS: 'block' } }}>
-          <Typography variant="body1" color="primary" fontSize={14} fontWeight={500}>
+        <Grid2
+          size={3}
+          sx={{ display: { mobileP: "none", desktopS: "block" } }}
+        >
+          <Typography
+            variant="body1"
+            color="primary"
+            fontSize={14}
+            fontWeight={500}
+          >
             EN / CS
           </Typography>
         </Grid2>
@@ -23,7 +36,7 @@ function Navbar() {
         <Grid2
           size={3}
           sx={{
-            display: { mobileP: 'none', desktopS: 'block' }
+            display: { mobileP: "none", desktopS: "block" },
           }}
         >
           <List disablePadding>
@@ -31,21 +44,21 @@ function Navbar() {
               variant="h6"
               color="primary.main"
               sx={{
-                '& a, & a:visited, & a:active': {
-                  color: 'inherit'
-                }
+                "& a, & a:visited, & a:active": {
+                  color: "inherit",
+                },
               }}
             >
-              <ListItem component={'a'} href="#about-section" disablePadding>
+              <ListItem component={"a"} href="#about-section" disablePadding>
                 ABOUT
               </ListItem>
-              <ListItem component={'a'} href="#services-section" disablePadding>
+              <ListItem component={"a"} href="#services-section" disablePadding>
                 SERVICES
               </ListItem>
-              <ListItem component={'a'} href="#bridgify-section" disablePadding>
+              <ListItem component={"a"} href="#bridgify-section" disablePadding>
                 BRIDGIFY
               </ListItem>
-              <ListItem component={'a'} href="#why-section" disablePadding>
+              <ListItem component={"a"} href="#why-section" disablePadding>
                 WHY WE
               </ListItem>
             </Typography>
@@ -56,12 +69,12 @@ function Navbar() {
         <Grid2
           size={{ mobileP: 0, desktopS: 3 }}
           sx={{
-            display: { mobileP: 'none', desktopS: 'flex' },
-            justifyContent: 'flex-end'
+            display: { mobileP: "none", desktopS: "flex" },
+            justifyContent: "flex-end",
           }}
         >
           <Typography variant="h5">
-            <Link component={'a'} sx={{ textDecoration: 'none' }}>
+            <Link component={"a"} sx={{ textDecoration: "none" }}>
               (+420) 773 635 962
             </Link>
           </Typography>
@@ -70,7 +83,10 @@ function Navbar() {
         {/* burger button */}
         <Grid2
           size={6}
-          sx={{ display: { mobileP: 'flex', desktopS: 'none' }, justifyContent: 'flex-end' }}
+          sx={{
+            display: { mobileP: "flex", desktopS: "none" },
+            justifyContent: "flex-end",
+          }}
           alignSelf="center"
         >
           {/* <BurgerIcon /> */}
@@ -78,7 +94,7 @@ function Navbar() {
         </Grid2>
       </Grid2>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

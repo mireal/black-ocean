@@ -1,33 +1,33 @@
-import { createTheme } from '@mui/material'
+import { createTheme } from "@mui/material";
 
-declare module '@mui/material/styles' {
+declare module "@mui/material/styles" {
   interface BreakpointOverrides {
-    xs: false
-    sm: false
-    md: false
-    lg: false
-    xl: false
-    mobileP: true
-    mobileL: true
-    tablet: true
-    desktopS: true
-    desktopM: true
-    desktopL: true
+    xs: false;
+    sm: false;
+    md: false;
+    lg: false;
+    xl: false;
+    mobileP: true;
+    mobileL: true;
+    tablet: true;
+    desktopS: true;
+    desktopM: true;
+    desktopL: true;
   }
 }
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#FFFFFF',
-      light: '#F2F2F2',
-      dark: '#505050',
-      contrastText: '#C3C3C3'
+      main: "#FFFFFF",
+      light: "#F2F2F2",
+      dark: "#505050",
+      contrastText: "#C3C3C3",
     },
     background: {
-      default: '#070B30'
+      default: "#070B30",
     },
-    divider: 'rgba(255, 255, 255, 0.2)'
+    divider: "rgba(255, 255, 255, 0.2)",
   },
   breakpoints: {
     values: {
@@ -36,26 +36,26 @@ const theme = createTheme({
       tablet: 728,
       desktopS: 960,
       desktopM: 1280,
-      desktopL: 1440
-    }
+      desktopL: 1440,
+    },
   },
   typography: {
     fontFamily: '"Open Sans", sans-serif',
     h2: {
-      fontSize: '22px',
-      fontWeight: 'bold',
+      fontSize: "22px",
+      fontWeight: "bold",
     },
     h3: {
-      color: 'white',
-      fontSize: '22px',
-      fontWeight: 'bold',
+      color: "white",
+      fontSize: "22px",
+      fontWeight: "bold",
     },
 
     subtitle1: {
-      fontSize: '16px',
-      fontWeight: 'bold'
-    }
-  }
-})
+      fontSize: "16px",
+      fontWeight: "bold",
+    },
+  },
+});
 
-export default theme
+export default theme;

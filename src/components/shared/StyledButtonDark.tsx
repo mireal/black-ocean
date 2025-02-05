@@ -1,20 +1,20 @@
-import { Button, styled } from '@mui/material'
+import { Button, styled } from "@mui/material";
 
 const StyledButtonDark = styled(Button)(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
   border: `1px solid white`,
-  borderRadius: '0',
-  color: 'white',
-  padding: '18px 50px',
+  borderRadius: "0",
+  color: "white",
+  padding: "18px 50px",
 
-  fontSize: '18px',
-  fontWeight: 'bold',
+  fontSize: "18px",
+  fontWeight: "bold",
 
-  '&:hover': {
-    backgroundColor: 'white',
+  "&:hover": {
+    backgroundColor: "white",
     border: `1px solid white`,
-    color: 'black'
-  }
-})) as typeof Button
+    color: "black",
+  },
+})) as typeof Button;
 
-export default StyledButtonDark
+export default StyledButtonDark;

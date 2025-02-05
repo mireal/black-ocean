@@ -1,15 +1,24 @@
-import React from 'react'
-import BurgerIcon from '../entities/BurgerIcon'
-import { Grid2, IconButton, Link, List, ListItem, Modal, Stack, Typography } from '@mui/material'
-import { Box } from '@mui/system'
-import CloseIcon from '@mui/icons-material/Close'
-import NavbarLogo from '../entities/NavbarLogo'
+import React from "react";
+import BurgerIcon from "../entities/BurgerIcon";
+import {
+  Grid2,
+  IconButton,
+  Link,
+  List,
+  ListItem,
+  Modal,
+  Stack,
+  Typography,
+} from "@mui/material";
+import { Box } from "@mui/system";
+import CloseIcon from "@mui/icons-material/Close";
+import NavbarLogo from "../entities/NavbarLogo";
 
 function BurgerButtonMenu() {
-  const [open, setOpen] = React.useState(false)
+  const [open, setOpen] = React.useState(false);
 
-  const handleOpen = () => setOpen(true)
-  const handleClose = () => setOpen(false)
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <>
@@ -23,25 +32,30 @@ function BurgerButtonMenu() {
         slotProps={{
           backdrop: {
             style: {
-              backgroundColor: '#070B30'
-            }
-          }
+              backgroundColor: "#070B30",
+            },
+          },
         }}
       >
         <Box
           sx={{
-            position: 'absolute',
+            position: "absolute",
             top: 0,
             left: 0,
-            height: '100vh',
-            width: '100vw',
-            backgroundColor: 'primary'
+            height: "100vh",
+            width: "100vw",
+            backgroundColor: "primary",
           }}
         >
           {/* navbar */}
-          <Grid2 container columns={2} justifyContent="space-between" padding="20px">
+          <Grid2
+            container
+            columns={2}
+            justifyContent="space-between"
+            padding="20px"
+          >
             <Grid2>
-              <NavbarLogo/>
+              <NavbarLogo />
             </Grid2>
 
             <Grid2>
@@ -55,31 +69,43 @@ function BurgerButtonMenu() {
             mt="10vh"
             justifyContent="center"
             alignItems="center"
-            gap={{ mobileP: '60px', mobileL: '100px' }}
+            gap={{ mobileP: "60px", mobileL: "100px" }}
           >
             {/* navigation links */}
             <List>
               <Typography
                 variant="h4"
                 color="primary.main"
-                fontSize={{ mobileP: '34px', mobileL: '44px' }}
+                fontSize={{ mobileP: "34px", mobileL: "44px" }}
                 sx={{
-                  '& a, & a:visited, & a:active': {
-                    color: 'inherit',
-                    justifyContent: 'center'
-                  }
+                  "& a, & a:visited, & a:active": {
+                    color: "inherit",
+                    justifyContent: "center",
+                  },
                 }}
               >
-                <ListItem component={'a'} href="#about-section" onClick={handleClose}>
+                <ListItem
+                  component={"a"}
+                  href="#about-section"
+                  onClick={handleClose}
+                >
                   ABOUT
                 </ListItem>
-                <ListItem component={'a'} href="#" onClick={handleClose}>
+                <ListItem component={"a"} href="#" onClick={handleClose}>
                   PRODUCTS
                 </ListItem>
-                <ListItem component={'a'} href="#why-section" onClick={handleClose}>
+                <ListItem
+                  component={"a"}
+                  href="#why-section"
+                  onClick={handleClose}
+                >
                   WHY WE
                 </ListItem>
-                <ListItem component={'a'} href="#contact-form" onClick={handleClose}>
+                <ListItem
+                  component={"a"}
+                  href="#contact-form"
+                  onClick={handleClose}
+                >
                   CONTACTS
                 </ListItem>
               </Typography>
@@ -89,9 +115,9 @@ function BurgerButtonMenu() {
             <Typography
               variant="h5"
               color="primary.main"
-              fontSize={{ mobileP: '20px', mobileL: '28px' }}
+              fontSize={{ mobileP: "20px", mobileL: "28px" }}
             >
-              <Link component={'a'} sx={{ textDecoration: 'none' }}>
+              <Link component={"a"} sx={{ textDecoration: "none" }}>
                 (+420) 773 635 962
               </Link>
             </Typography>
@@ -100,7 +126,7 @@ function BurgerButtonMenu() {
             <Typography
               variant="body1"
               color="primary"
-              fontSize={{ mobileP: '28px', mobileL: '34px' }}
+              fontSize={{ mobileP: "28px", mobileL: "34px" }}
               fontWeight={500}
             >
               EN / CS
@@ -109,7 +135,7 @@ function BurgerButtonMenu() {
         </Box>
       </Modal>
     </>
-  )
+  );
 }
 
-export default BurgerButtonMenu
+export default BurgerButtonMenu;

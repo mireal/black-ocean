@@ -1,14 +1,18 @@
-import { Box, Typography } from '@mui/material'
-import SquareOutlinedIcon from '@mui/icons-material/SquareOutlined'
-import SquareIcon from '@mui/icons-material/Square'
+import { Box, Typography } from "@mui/material";
+import SquareOutlinedIcon from "@mui/icons-material/SquareOutlined";
+import SquareIcon from "@mui/icons-material/Square";
 
-function AdvantageRectangle({ filledRectangles }: { filledRectangles: number }) {
-  const icons = []
+function AdvantageRectangle({
+  filledRectangles,
+}: {
+  filledRectangles: number;
+}) {
+  const icons = [];
   for (let i = 1; i <= 4; i++) {
     if (i <= filledRectangles) {
-      icons.push(<SquareIcon sx={{ transform: 'scale(0.84)' }} />)
+      icons.push(<SquareIcon sx={{ transform: "scale(0.84)" }} />);
     } else {
-      icons.push(<SquareOutlinedIcon sx={{ transform: 'scale(0.84)' }} />)
+      icons.push(<SquareOutlinedIcon sx={{ transform: "scale(0.84)" }} />);
     }
   }
 
@@ -17,8 +21,8 @@ function AdvantageRectangle({ filledRectangles }: { filledRectangles: number }) 
       <Typography
         variant="body1"
         sx={{
-          color: 'primary.main',
-          fontSize: '0'
+          color: "primary.main",
+          fontSize: "0",
         }}
       >
         <Box display="inline-flex" flexDirection="column" gap="5px">
@@ -33,7 +37,7 @@ function AdvantageRectangle({ filledRectangles }: { filledRectangles: number }) 
         </Box>
       </Typography>
     </>
-  )
+  );
 }
 
-export default AdvantageRectangle
+export default AdvantageRectangle;

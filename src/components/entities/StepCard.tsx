@@ -1,9 +1,9 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Typography } from "@mui/material";
 
 export interface StepCardContent {
-  title: string
-  subtitle: string
-  paragraph: string
+  title: string;
+  subtitle: string;
+  paragraph: string;
 }
 
 function StepCard({ content }: { content: StepCardContent }) {
@@ -12,7 +12,7 @@ function StepCard({ content }: { content: StepCardContent }) {
       <Box
         display="flex"
         flexDirection="column"
-        gap={{ mobileP: '40px', tablet: '60px' }}
+        gap={{ mobileP: "40px", tablet: "60px" }}
         borderLeft="1px solid rgba(255, 255, 255, 0.2)"
         padding="15px"
       >
@@ -48,7 +48,7 @@ function StepCard({ content }: { content: StepCardContent }) {
         </Box>
       </Box>
     </>
-  )
+  );
 }
 
-export default StepCard
+export default StepCard;
