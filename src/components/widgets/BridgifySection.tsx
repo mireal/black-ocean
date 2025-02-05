@@ -10,7 +10,7 @@ function BridgifySection() {
         paddingY={{ mobileP: '60px', tablet: '80px', desktopS: '120px' }}
         paddingX={{ mobileP: '10px', mobileL: '16px', tablet: '20px', desktopS: '40px' }}
         sx={{
-          backgroundImage: 'url("./src/assets/images/bridgify-bg.png")',
+          backgroundImage: 'url("./public/assets/images/bridgify-bg.png")',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover'

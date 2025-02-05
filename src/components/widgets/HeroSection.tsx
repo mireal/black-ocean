@@ -10,7 +10,7 @@ function HeroSection() {
         width={'100vw'}
         paddingX={{ mobileP: '10px', mobileL: '16px', tablet: '20px', desktopS: '40px' }}
         sx={{
-          backgroundImage: 'url("./src/assets/images/hero-bg.png")',
+          backgroundImage: 'url("./public/assets/images/hero-bg.png")',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover'
