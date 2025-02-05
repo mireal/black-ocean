@@ -4,7 +4,7 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 function HeroContent() {
   return (
     <>
-      <Box paddingX={{ desktopS: 2 }}>
+      <Box >
         {/* title */}
         <Typography
           variant="h1"

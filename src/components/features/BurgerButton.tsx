@@ -117,7 +117,7 @@ function BurgerButtonMenu() {
               color="primary.main"
               fontSize={{ mobileP: "20px", mobileL: "28px" }}
             >
-              <Link component={"a"} sx={{ textDecoration: "none" }}>
+              <Link component={"a"} href="tel:+420773635962" sx={{ textDecoration: "none" }}>
                 (+420) 773 635 962
               </Link>
             </Typography>
