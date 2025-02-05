@@ -1,6 +1,6 @@
-import { Box, Input, styled } from "@mui/material"
+import { Input, Stack, styled } from "@mui/material"
 import StyledButton from "../shared/StyledButton"
-import { Form, useFormik } from 'formik';
+import { Form, Formik } from 'formik';
 import * as Yup from 'yup';
 
 const InputField = styled(Input)(({ theme }) => ({
@@ -42,34 +42,37 @@ const validationSchema = Yup.object({
 });
 
 export default function ContactForm() {
-    const formik = useFormik({
-        initialValues: initialValues,
-        validationSchema: validationSchema,
-
-        onSubmit: (values) => {
-            alert(JSON.stringify(values, null, 2));
-        },
-    })
 
     return (
-        <Box>
-            <Form onSubmit={formik.handleSubmit}>
-                <InputField id='name' name="name" placeholder="NAME" />
-                <InputField id='email' name='email' placeholder="EMAIL" />
-                <InputField id='phone' name='phone' placeholder="PHONE NUMBER" />
-                <InputField id='message' name='message' placeholder="MESSAGE" multiline
-                    sx={{
-                        minHeight: '200px',
-                        display: 'flex',
-                        alignItems: 'start'
-                    }} />
+        <Formik
+            initialValues={initialValues}
+            validationSchema={validationSchema}
+            onSubmit={(values, actions) => {
 
-                <StyledButton type='submit' sx={{ mt: '15px' }}> SUBMIT </StyledButton>
+                console.log({ values, actions });
+
+                alert(JSON.stringify(values, null, 2));
+
+                actions.setSubmitting(false);
+
+            }}
+        >
+            <Form>
+                <Stack gap='15px'>
+                    <InputField id='name' name="name" placeholder="NAME" />
+                    <InputField id='email' name='email' placeholder="EMAIL" />
+                    <InputField id='phone' name='phone' placeholder="PHONE NUMBER" />
+                    <InputField id='message' name='message' placeholder="MESSAGE" multiline
+                        sx={{
+                            minHeight: '200px',
+                            display: 'flex',
+                            alignItems: 'start'
+                        }} />
+
+                    <StyledButton fullWidth type='submit' sx={{ mt: '15px' }}> SUBMIT </StyledButton>
+                </Stack>
 
             </Form>
-
-
-
-        </Box>
+        </Formik>
     )
 }

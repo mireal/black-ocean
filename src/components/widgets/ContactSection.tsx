@@ -23,7 +23,7 @@ function ContactSection() {
                     </Typography>
                 </Box>
                 <Stack flex={{ mobileP: 'none', desktopS: 1 }} spacing='15px' useFlexGap>
-                    {/* <ContactForm /> */}
+                    <ContactForm />
                 </Stack>
             </Stack>
         </>
