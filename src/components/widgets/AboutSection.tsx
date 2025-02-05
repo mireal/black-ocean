@@ -46,7 +46,7 @@ function AboutSection() {
               }
             }}
           >
-            <img src="./public/assets/images/about.png"></img>
+            <img src="./assets/images/about.png"></img>
           </Grid2>
 
           {/* text */}

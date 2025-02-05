@@ -6,7 +6,7 @@ function TestimonialsSection() {
     const content: TestimonialContent[] = [
         {
             author: {
-                imageSrc: './public/assets/images/avatars/1.png',
+                imageSrc: './assets/images/avatars/1.png',
                 name: 'Jan Novák',
                 job: 'CEO'
             },
@@ -15,7 +15,7 @@ function TestimonialsSection() {
         },
         {
             author: {
-                imageSrc: './public/assets/images/avatars/2.png',
+                imageSrc: './assets/images/avatars/2.png',
                 name: 'Michael Johnson',
                 job: 'Founder'
             },
@@ -24,7 +24,7 @@ function TestimonialsSection() {
         },
         {
             author: {
-                imageSrc: './public/assets/images/avatars/3.png',
+                imageSrc: './assets/images/avatars/3.png',
                 name: 'Eva Kovářová',
                 job: 'Marketing Director'
             },
@@ -33,7 +33,7 @@ function TestimonialsSection() {
         },
         {
             author: {
-                imageSrc: './public/assets/images/avatars/4.png',
+                imageSrc: './assets/images/avatars/4.png',
                 name: 'Daniel White',
                 job: 'COO'
             },
@@ -42,7 +42,7 @@ function TestimonialsSection() {
         },
         {
             author: {
-                imageSrc: './public/assets/images/avatars/5.png',
+                imageSrc: './assets/images/avatars/5.png',
                 name: 'Sophia Brown',
                 job: 'Ecommerce Manager'
             },
@@ -51,7 +51,7 @@ function TestimonialsSection() {
         },
         {
             author: {
-                imageSrc: './public/assets/images/avatars/6.png',
+                imageSrc: './assets/images/avatars/6.png',
                 name: 'Emma Wilson',
                 job: 'Project Manager'
             },

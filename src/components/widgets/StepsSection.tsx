@@ -8,7 +8,7 @@ function StepsSection() {
                 paddingY={{ mobileP: '60px', tablet: '80px', desktopS: '120px' }}
                 paddingX={{ mobileP: '10px', mobileL: '16px', tablet: '20px', desktopS: '40px' }}
                 sx={{
-                    backgroundImage: 'url("./public/assets/images/hero-bg.png")',
+                    backgroundImage: 'url("./assets/images/hero-bg.png")',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover'
@@ -90,7 +90,7 @@ function StepsSection() {
                         width: { mobileP: '50%', mobileL: '35%', tablet: '25%' }
 
                     }}>
-                        <img src='./public/assets/images/steps-small.png' style={{ width: '100%' }} />
+                        <img src='./assets/images/steps-small.png' style={{ width: '100%' }} />
                     </Box>
 
                     {/* big image */}
@@ -98,7 +98,7 @@ function StepsSection() {
                         width: { mobileP: '100%', mobileL: '50%' }
 
                     }}>
-                        <img src='./public/assets/images/steps-big.png' style={{ width: '100%' }} />
+                        <img src='./assets/images/steps-big.png' style={{ width: '100%' }} />
                     </Box>
                 </Box>
             </Box>

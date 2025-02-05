@@ -5,7 +5,7 @@ export default function NavbarLogo() {
         <>
             <Link component={'a'} href="/" target="_blank">
                 <img
-                    src="../public/assets/icons/black_ocean_logo.svg"
+                    src="../assets/icons/black_ocean_logo.svg"
                     className="logo"
                     alt="Black ocean logo"
                 />
