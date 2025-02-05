@@ -8,7 +8,7 @@ export default function FooterContactLinks() {
         <Typography
           variant="h5"
           color="primary.contrastText"
-          fontSize="24px"
+          fontSize={{ mobileP: '20px', mobileL: "24px" }}
           fontWeight="600"
           textTransform="uppercase"
         >
@@ -33,7 +33,9 @@ export default function FooterContactLinks() {
               spacing="20px"
               pt="20px"
             >
-              <Box pl={{ mobileP: 0, tablet: "20px" }}>+420 773 635 962</Box>
+              <Box pl={{ mobileP: 0, tablet: "20px" }}>
+                +420 773 635 962
+              </Box>
               <Box pl={{ mobileP: 0, tablet: "20px" }}>
                 info@oceanperform.com
               </Box>
