@@ -5,64 +5,13 @@ import { Box, Divider } from "@mui/material";
 function HeroSection() {
   return (
     <>
-      {/* below navbar */}
-      <Divider
-        sx={{
-          position: "absolute",
-          top: { mobileP: "82px", desktopS: "166px" },
-          // left:'50%',
-          width: "100%",
-        }}
-      />
-
-      {/* right corner */}
-      <Divider
-        orientation="vertical"
-        sx={{
-          position: "absolute",
-          top: 0,
-          height: "100vh",
-          right: {
-            mobileP: "10px",
-            mobileL: "16px",
-            tablet: "20px",
-            desktopS: "40px",
-          },
-        }}
-      />
-
-      {/* left corner on mobile, middle on desktop */}
-      <Divider
-        orientation="vertical"
-        sx={{
-          position: "absolute",
-          top: 0,
-          height: "100vh",
-          left: {
-            mobileP: "10px",
-            mobileL: "16px",
-            tablet: "50%",
-          },
-        }}
-      />
-
-      {/* vertical desktop only*/}
-      <Divider
-        orientation="vertical"
-        sx={{
-          position: "absolute",
-          top: 0,
-          height: "100vh",
-          left: {
-            tablet: "25%",
-            desktopM: "30%",
-          },
-        }}
-      />
-
       <Box
         height={"100vh"}
+        maxHeight='900px'
         width={"100vw"}
+        display='flex'
+        flexDirection='column'
+        alignItems='center'
         paddingX={{
           mobileP: "10px",
           mobileL: "16px",
@@ -76,8 +25,67 @@ function HeroSection() {
           backgroundSize: "cover",
         }}
       >
-        <Navbar />
-        <HeroContent />
+        {/* horizontal */}
+        <Divider
+          sx={{
+            position: "absolute",
+            top: { mobileP: "82px", desktopS: "166px" },
+            // left:'50%',
+            width: "100%",
+          }}
+        />
+
+        <Box maxWidth="1368px" position='relative' width='100%' height='100%'>
+
+          {/* right corner */}
+          <Divider
+            orientation="vertical"
+            sx={{
+              position: "absolute",
+              top: 0,
+              height: "100vh",
+              maxHeight: '900px',
+              right: 0,
+            }}
+          />
+
+          {/* left corner on mobile, middle on desktop */}
+          <Divider
+            orientation="vertical"
+            sx={{
+              position: "absolute",
+              top: 0,
+              height: "100vh",
+              maxHeight: '900px',
+              left: {
+                mobileP: 0,
+                tablet: "50%",
+              },
+            }}
+          />
+
+          {/* vertical first, desktop only*/}
+          <Divider
+            orientation="vertical"
+            sx={{
+              // display:{mobileP:'none', tablet:'block'},
+              position: "absolute",
+              top: 0,
+              height: "100vh",
+              maxHeight: '900px',
+              left: {
+                mobileP: '-100%',
+                tablet: "199px",
+                desktopS: "315px",
+                desktopM: '460px',
+                desktopL: '451px'
+              },
+            }}
+          />
+
+          <Navbar />
+          <HeroContent />
+        </Box>
       </Box>
     </>
   );

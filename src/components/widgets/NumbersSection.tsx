@@ -1,4 +1,4 @@
-import { Box, Grid2, Typography } from "@mui/material";
+import { Box, Grid2, Stack, Typography } from "@mui/material";
 import NumberCardsBlock from "../features/NumberCardsBlock";
 import { useTranslation } from "react-i18next";
 
@@ -7,8 +7,10 @@ function NumbersSection() {
   const keys = ["first", "second", "third", "fourth", "fifth", "sixth"];
 
   return (
-    <>
+    <Stack alignItems='center'>
       <Box
+        maxWidth="1368px"
+        width='100%'
         paddingY={{ mobileP: "60px", tablet: "80px", desktopS: "120px" }}
         paddingX={{
           mobileP: "10px",
@@ -76,7 +78,7 @@ function NumbersSection() {
 
         <NumberCardsBlock keys={keys} />
       </Box>
-    </>
+    </Stack>
   );
 }
 

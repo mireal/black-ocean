@@ -1,4 +1,4 @@
-import { Box, Grid2, Typography } from "@mui/material";
+import { Box, Grid2, Stack, Typography } from "@mui/material";
 import StepCard from "../entities/StepCard";
 import { useTranslation } from "react-i18next";
 
@@ -6,20 +6,23 @@ function StepsSection() {
   const { t } = useTranslation();
 
   return (
-    <>
+    <Stack
+      alignItems='center'
+      sx={{
+        backgroundImage: 'url("./assets/images/hero-bg.png")',
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}>
       <Box
+        maxWidth="1368px"
+        width='100%'
         paddingY={{ mobileP: "60px", tablet: "80px", desktopS: "120px" }}
         paddingX={{
           mobileP: "10px",
           mobileL: "16px",
           tablet: "20px",
           desktopS: "40px",
-        }}
-        sx={{
-          backgroundImage: 'url("./assets/images/hero-bg.png")',
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
         }}
       >
         <Typography
@@ -102,7 +105,7 @@ function StepsSection() {
           </Box>
         </Box>
       </Box>
-    </>
+    </Stack>
   );
 }
 

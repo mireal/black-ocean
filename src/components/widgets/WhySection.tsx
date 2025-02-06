@@ -7,10 +7,12 @@ function WhySection() {
   const { t } = useTranslation();
 
   return (
-    <>
+    <Stack alignItems='center'>
       {/* section padding */}
       <Box
         id={"why-section"}
+        maxWidth="1368px"
+        width='100%'
         paddingY={{ mobileP: "60px", tablet: "80px", desktopS: "120px" }}
         paddingX={{
           mobileP: "10px",
@@ -231,7 +233,7 @@ function WhySection() {
           </Grid2>
         </Grid2>
       </Box>
-    </>
+    </Stack>
   );
 }
 

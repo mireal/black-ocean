@@ -6,8 +6,12 @@ function ContactSection() {
   const { t } = useTranslation();
 
   return (
-    <>
+    <Stack
+      alignItems='center'
+      sx={{ backgroundColor: "black" }}>
       <Stack
+        maxWidth="1368px"
+        width='100%'
         id={"contact-form"}
         direction={{ mobileP: "column", desktopS: "row" }}
         paddingTop={{ mobileP: "40px", tablet: "60px" }}
@@ -45,7 +49,7 @@ function ContactSection() {
           <ContactForm />
         </Stack>
       </Stack>
-    </>
+    </Stack>
   );
 }
 

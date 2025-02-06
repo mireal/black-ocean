@@ -9,11 +9,14 @@ function Navbar() {
 
   return (
     <>
+
       <Grid2
         container
         wrap="nowrap"
         paddingTop={{ mobileP: 0, desktopS: "20px" }}
         height={{ mobileP: "82px", desktopS: "166px" }}
+        
+        width='100%'
       >
         <Grid2
           size={{ mobileP: 6, desktopS: 3 }}

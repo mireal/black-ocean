@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import TestimonialsContent from "../features/TestimonialsContent";
 import { useTranslation } from "react-i18next";
 
@@ -7,8 +7,10 @@ function TestimonialsSection() {
   const keys = ["first", "second", "third", "fourth", "fifth", "sixth"];
 
   return (
-    <>
+    <Stack alignItems='center'>
       <Box
+        maxWidth="1368px"
+        width='100%'
         paddingY={{ mobileP: "60px", tablet: "80px", desktopS: "120px" }}
         paddingX={{
           mobileP: "10px",
@@ -35,7 +37,7 @@ function TestimonialsSection() {
 
         <TestimonialsContent keys={keys} />
       </Box>
-    </>
+    </Stack>
   );
 }
 

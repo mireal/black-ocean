@@ -78,7 +78,7 @@ function ServiceBlock({ nameKey }: { nameKey: string }) {
               fontSize={"14px"}
               fontWeight={"600"}
               lineHeight={"125%"}
-              width={{ mobileP: "100%", tablet: "40vw", desktopS: "25vw" }}
+              width={{ mobileP: "100%", tablet: '270px' }}
             >
               {t(`services.blocks.${nameKey}.description`)}
             </Typography>
