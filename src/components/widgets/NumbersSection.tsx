@@ -1,46 +1,10 @@
 import { Box, Grid2, Typography } from "@mui/material";
-import { NumberCardContent } from "../entities/NumberCard";
 import NumberCardsBlock from "../features/NumberCardsBlock";
+import { useTranslation } from "react-i18next";
 
 function NumbersSection() {
-  const content: NumberCardContent[] = [
-    {
-      number: "50+",
-      title: "Projects Delivered",
-      paragraph:
-        "Proven expertise across diverse industries, ensuring exceptional outcomes.",
-    },
-    {
-      number: "99%",
-      title: "Success Rate",
-      paragraph:
-        "Trusted by clients worldwide for reliable and effective solution",
-    },
-    {
-      number: "30+",
-      title: "Traffic & Software Projects",
-      paragraph:
-        "Fueling creativity and dedication behind every successful project.",
-    },
-    {
-      number: "20+",
-      title: "Specialists",
-      paragraph:
-        "A highly skilled team dedicated to solving complex challenges.",
-    },
-    {
-      number: "5",
-      title: "Ongoing Projects",
-      paragraph:
-        "Continuously driving innovation and delivering value to our clients.",
-    },
-    {
-      number: "1000+",
-      title: "Cups of Coffe",
-      paragraph:
-        "Fueling creativity and dedication behind every successful project.",
-    },
-  ];
+  const { t } = useTranslation();
+  const keys = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth']
 
   return (
     <>
@@ -64,6 +28,7 @@ function NumbersSection() {
             desktopM: "64px",
           }}
           textTransform="uppercase"
+          noWrap
           mb={{ mobileP: "20px", tablet: "30px" }}
           display={{ mobileP: "block", desktopL: "flex" }}
           justifyContent="space-between"
@@ -74,7 +39,7 @@ function NumbersSection() {
               display: "inline-block",
             }}
           >
-            Trust the numbers
+            {t('numbers.title 1')}
           </Box>
           <Box
             display={{ mobileP: "none", mobileL: "inline-block" }}
@@ -88,7 +53,7 @@ function NumbersSection() {
               textAlign: { mobileP: "left", mobileL: "right" },
             }}
           >
-            Trust Black Ocean
+            {t('numbers.title 2')}
           </Box>
         </Typography>
 
@@ -104,14 +69,12 @@ function NumbersSection() {
               fontWeight="600"
               textTransform="uppercase"
             >
-              When you work with us, you’re choosing a team that values
-              excellence in every detail, from project completion to ongoing
-              support.
+              {t('numbers.subtitle')}
             </Typography>
           </Grid2>
         </Grid2>
 
-        <NumberCardsBlock content={content} />
+        <NumberCardsBlock keys={keys} />
       </Box>
     </>
   );

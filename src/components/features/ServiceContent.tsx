@@ -1,4 +1,3 @@
-import { ReactElement } from "react";
 import {
   Box,
   Divider,
@@ -8,31 +7,13 @@ import {
   Typography,
 } from "@mui/material";
 import SquareOutlinedIcon from "@mui/icons-material/Square";
+import { useTranslation } from "react-i18next";
 
-interface ServiceBlockContent {
-  title: string;
-  caption: string;
-  content: string[];
-}
 
-function ServiceBlock({ blockContent }: { blockContent: ServiceBlockContent }) {
-  const elements: ReactElement[] = [];
+function ServiceBlock({ nameKey }: { nameKey: string }) {
+  const { t } = useTranslation();
 
-  blockContent.content.forEach((text, index) => {
-    elements.push(
-      <ListItem key={index} disableGutters disablePadding>
-        <ListItemIcon
-          sx={{
-            minWidth: "30px",
-            color: "white",
-          }}
-        >
-          <SquareOutlinedIcon sx={{ width: "0.6em" }} />
-        </ListItemIcon>
-        <ListItemText>{text}</ListItemText>
-      </ListItem>,
-    );
-  });
+  const content = t(`services.blocks.${nameKey}.content`, { returnObjects: true }) as string[]
 
   return (
     <>
@@ -57,7 +38,7 @@ function ServiceBlock({ blockContent }: { blockContent: ServiceBlockContent }) {
               fontWeight={"600"}
               lineHeight={"110%"}
             >
-              {blockContent.title}
+              {t(`services.blocks.${nameKey}.title`)}
             </Typography>
 
             <Typography
@@ -67,7 +48,21 @@ function ServiceBlock({ blockContent }: { blockContent: ServiceBlockContent }) {
               fontWeight={"600"}
               lineHeight={"125%"}
             >
-              {elements}
+              {
+                content.map((text, index) => (
+                  <ListItem key={index} disableGutters disablePadding>
+                    <ListItemIcon
+                      sx={{
+                        minWidth: "30px",
+                        color: "white",
+                      }}
+                    >
+                      <SquareOutlinedIcon sx={{ width: "0.6em" }} />
+                    </ListItemIcon>
+                    <ListItemText>{t(`services.blocks.${nameKey}.content.${index}`)}</ListItemText>
+                  </ListItem>
+                ))
+              }
             </Typography>
           </Box>
           <Box
@@ -84,7 +79,7 @@ function ServiceBlock({ blockContent }: { blockContent: ServiceBlockContent }) {
               lineHeight={"125%"}
               width={{ mobileP: "100%", tablet: "40vw", desktopS: "25vw" }}
             >
-              {blockContent.caption}
+              {t(`services.blocks.${nameKey}.description`)}
             </Typography>
           </Box>
         </Box>
@@ -94,20 +89,17 @@ function ServiceBlock({ blockContent }: { blockContent: ServiceBlockContent }) {
   );
 }
 
-function ServiceContent({ blocks }: { blocks: ServiceBlockContent[] }) {
-  const elements: ReactElement[] = [];
+function ServiceContent({keys}: {keys:string[]}) {
 
-  for (const block of blocks) {
-    elements.push(<ServiceBlock blockContent={block} />);
-  }
   return (
     <>
       <Box display="flex" flexDirection="column">
-        {elements}
+        {keys.map((key) => (
+          <ServiceBlock key={key} nameKey={key} />
+        ))}
       </Box>
     </>
   );
 }
 
-export type { ServiceBlockContent };
 export default ServiceContent;

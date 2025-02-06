@@ -1,8 +1,12 @@
 import { Box, Divider, Grid2, Typography } from "@mui/material";
 import StyledButton from "../shared/StyledButton";
 import SouthEastSharpIcon from "@mui/icons-material/SouthEastSharp";
+import { useTranslation } from "react-i18next";
 
 function BridgifySection() {
+  const { t } = useTranslation();
+
+  
   return (
     <>
       {/* section padding */}
@@ -36,7 +40,7 @@ function BridgifySection() {
           fontWeight="600"
           textTransform="uppercase"
         >
-          Bridgify: Simplify Your Online Business
+          {t('bridgify.title')}
         </Typography>
 
         {/* content header */}
@@ -60,11 +64,7 @@ function BridgifySection() {
               fontWeight="600"
               textTransform="uppercase"
             >
-              At Black Ocean, we not only deliver tailored web traffic and
-              software solutions but also innovate with our proprietary tools.
-              One such product is Bridgify – an advanced eCommerce solution
-              designed to streamline online store management and boost business
-              efficiency.
+              {t('bridgify.description')}
             </Typography>
           </Grid2>
         </Grid2>
@@ -90,20 +90,14 @@ function BridgifySection() {
                 }}
               >
                 <Box>
-                  Bridgify specializes in building and optimizing online stores
-                  on the Odoo platform. It offers automation for up to 10
-                  business tasks and modular functionality to adapt to your
-                  specific needs.
+                  {t('bridgify.subtitle 1')}
                 </Box>
                 <Box mb="20px">
-                  With tools like SEO, Google Analytics integration, and promo
-                  creation, Bridgify helps businesses scale efficiently. Ongoing
-                  support and training make it your trusted partner for seamless
-                  eCommerce success.
+                  {t('bridgify.subtitle 2')}
                 </Box>
 
                 <StyledButton endIcon={<SouthEastSharpIcon />}>
-                  DISCOVER BRIDGIFY
+                  {t('bridgify.button')}
                 </StyledButton>
               </Box>
             </Typography>

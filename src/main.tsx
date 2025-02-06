@@ -10,6 +10,7 @@ import PrivacyPolicy from "./components/pages/PrivacyPolicy.tsx";
 import CookiePolicy from "./components/pages/CookiePolicy.tsx";
 import RiskManagementPolicy from "./components/pages/RiskManagementPolicy.tsx";
 import TermsAndConditions from "./components/pages/TermsAndConditions.tsx";
+import './providers/i18n.ts'
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

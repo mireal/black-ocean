@@ -1,18 +1,8 @@
 import { Grid2 } from "@mui/material";
-import { NumberCardContent } from "../entities/NumberCard";
 import NumberCard from "../entities/NumberCard";
-import { ReactElement } from "react";
 
-function NumberCardsBlock({ content }: { content: NumberCardContent[] }) {
-  const elements: ReactElement[] = content.map((item, index) => (
-    <Grid2
-      key={index}
-      size={{ mobileP: 1, desktopS: "auto" }}
-      width={{ desktopS: "376px" }}
-    >
-      <NumberCard content={item}></NumberCard>
-    </Grid2>
-  ));
+
+function NumberCardsBlock({ keys }: { keys: string[] }) {
 
   return (
     <>
@@ -27,7 +17,15 @@ function NumberCardsBlock({ content }: { content: NumberCardContent[] }) {
           zIndex: 2,
         }}
       >
-        {elements}
+        {keys.map((key) => (
+          <Grid2
+            key={key}
+            size={{ mobileP: 1, desktopS: "auto" }}
+            width={{ desktopS: "376px" }}
+          >
+            <NumberCard keyName={key}></NumberCard>
+          </Grid2>
+        ))}
       </Grid2>
     </>
   );

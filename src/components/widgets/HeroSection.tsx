@@ -3,6 +3,7 @@ import HeroContent from "../features/HeroContent";
 import { Box, Divider } from "@mui/material";
 
 function HeroSection() {
+  
   return (
     <>
       {/* below navbar */}
