@@ -1,7 +1,12 @@
 import { Typography, Link, Grid2, List, ListItem } from "@mui/material";
 import BurgerButtonMenu from "./BurgerButton";
 import NavbarLogo from "../entities/NavbarLogo";
+import { useTranslation } from "react-i18next";
+import LanguageButton from "./LanguageButton";
+
 function Navbar() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Grid2
@@ -22,13 +27,8 @@ function Navbar() {
           size={3}
           sx={{ display: { mobileP: "none", desktopS: "block" } }}
         >
-          <Typography
-            variant="body1"
-            color="primary"
-            fontSize={14}
-            fontWeight={600}
-          >
-            EN / CS
+          <Typography variant="body1" fontSize={14} fontWeight={600}>
+            <LanguageButton />
           </Typography>
         </Grid2>
 
@@ -43,6 +43,8 @@ function Navbar() {
             <Typography
               variant="h6"
               color="primary.main"
+              textTransform="uppercase"
+              fontWeight="600"
               sx={{
                 "& a, & a:visited, & a:active": {
                   color: "inherit",
@@ -50,16 +52,16 @@ function Navbar() {
               }}
             >
               <ListItem component={"a"} href="#about-section" disablePadding>
-                ABOUT
+                {t("navbarLinks.about")}
               </ListItem>
               <ListItem component={"a"} href="#services-section" disablePadding>
-                SERVICES
+                {t("navbarLinks.services")}
               </ListItem>
               <ListItem component={"a"} href="#bridgify-section" disablePadding>
-                BRIDGIFY
+                {t("navbarLinks.bridgify")}
               </ListItem>
               <ListItem component={"a"} href="#why-section" disablePadding>
-                WHY WE
+                {t("navbarLinks.whyWe")}
               </ListItem>
             </Typography>
           </List>

@@ -1,12 +1,9 @@
 import { Box, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
-export interface StepCardContent {
-  title: string;
-  subtitle: string;
-  paragraph: string;
-}
+function StepCard({ keyName }: { keyName: string }) {
+  const { t } = useTranslation();
 
-function StepCard({ content }: { content: StepCardContent }) {
   return (
     <>
       <Box
@@ -23,7 +20,7 @@ function StepCard({ content }: { content: StepCardContent }) {
           fontWeight="600"
           textTransform="uppercase"
         >
-          {content.title}
+          {t(`steps.cards.${keyName}.id`)}
         </Typography>
 
         <Box display="flex" flexDirection="column" gap="20px">
@@ -34,7 +31,7 @@ function StepCard({ content }: { content: StepCardContent }) {
             fontWeight="600"
             lineHeight="120%"
           >
-            {content.subtitle}
+            {t(`steps.cards.${keyName}.title`)}
           </Typography>
 
           <Typography
@@ -43,7 +40,7 @@ function StepCard({ content }: { content: StepCardContent }) {
             fontSize="16px"
             lineHeight="125%"
           >
-            {content.paragraph}
+            {t(`steps.cards.${keyName}.description`)}
           </Typography>
         </Box>
       </Box>

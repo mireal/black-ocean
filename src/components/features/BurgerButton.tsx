@@ -13,12 +13,16 @@ import {
 import { Box } from "@mui/system";
 import CloseIcon from "@mui/icons-material/Close";
 import NavbarLogo from "../entities/NavbarLogo";
+import { useTranslation } from "react-i18next";
+import LanguageButton from "./LanguageButton";
 
 function BurgerButtonMenu() {
   const [open, setOpen] = React.useState(false);
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -89,24 +93,24 @@ function BurgerButtonMenu() {
                   href="#about-section"
                   onClick={handleClose}
                 >
-                  ABOUT
+                  {t("navbarLinks.about")}
                 </ListItem>
                 <ListItem component={"a"} href="#" onClick={handleClose}>
-                  PRODUCTS
+                  {t("navbarLinks.products")}
                 </ListItem>
                 <ListItem
                   component={"a"}
                   href="#why-section"
                   onClick={handleClose}
                 >
-                  WHY WE
+                  {t("navbarLinks.whyWe")}
                 </ListItem>
                 <ListItem
                   component={"a"}
                   href="#contact-form"
                   onClick={handleClose}
                 >
-                  CONTACTS
+                  {t("navbarLinks.contacts")}
                 </ListItem>
               </Typography>
             </List>
@@ -129,11 +133,10 @@ function BurgerButtonMenu() {
             {/* language switch */}
             <Typography
               variant="body1"
-              color="primary"
               fontSize={{ mobileP: "28px", mobileL: "34px" }}
               fontWeight={500}
             >
-              EN / CS
+              <LanguageButton />
             </Typography>
           </Stack>
         </Box>

@@ -1,7 +1,10 @@
 import { Box, Typography, Button, Grid2 } from "@mui/material";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import { useTranslation } from "react-i18next";
 
 function HeroContent() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Box>
@@ -24,8 +27,7 @@ function HeroContent() {
             width={"30vw"}
             sx={{ display: { mobileP: "none", tablet: "inline-block" } }}
           />
-          Simplify your digital journey with tailored web traffic strategies and
-          cutting-edge software designed to elevate your business performance.
+          {t("hero.title")}
         </Typography>
 
         {/* subtitle */}
@@ -48,9 +50,7 @@ function HeroContent() {
               lineHeight={"125%"}
               fontWeight={600}
             >
-              Optimize your online presence with precision, unlock exclusive
-              tools to tackle business challenges, and drive growth with
-              scalable, reliable solutions from Black Ocean.
+              {t("hero.subtitle")}
             </Typography>
           </Grid2>
         </Grid2>
@@ -80,7 +80,7 @@ function HeroContent() {
                 })
               }
             >
-              Scroll to explore
+              {t("hero.scroll")}
             </Button>
           </Grid2>
         </Grid2>

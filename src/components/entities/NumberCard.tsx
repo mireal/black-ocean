@@ -1,12 +1,9 @@
 import { Box, Divider, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
-export interface NumberCardContent {
-  number: string;
-  title: string;
-  paragraph: string;
-}
+function NumberCard({ keyName }: { keyName: string }) {
+  const { t } = useTranslation();
 
-function NumberCard({ content }: { content: NumberCardContent }) {
   return (
     <>
       <Box pt="40px" pr={{ mobileL: "20px", desktopS: "40px" }}>
@@ -19,7 +16,7 @@ function NumberCard({ content }: { content: NumberCardContent }) {
           textTransform="uppercase"
           mb="20px"
         >
-          {content.number}
+          {t(`numbers.blocks.${keyName}.numbers`)}
         </Typography>
 
         <Typography
@@ -30,7 +27,7 @@ function NumberCard({ content }: { content: NumberCardContent }) {
           textTransform="uppercase"
           mb="40px"
         >
-          {content.title}
+          {t(`numbers.blocks.${keyName}.title`)}
         </Typography>
 
         <Typography
@@ -39,7 +36,7 @@ function NumberCard({ content }: { content: NumberCardContent }) {
           fontSize="16px"
           lineHeight="125%"
         >
-          {content.paragraph}
+          {t(`numbers.blocks.${keyName}.description`)}
         </Typography>
       </Box>
     </>

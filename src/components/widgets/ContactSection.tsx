@@ -1,7 +1,10 @@
 import { Box, Stack, Typography } from "@mui/material";
 import ContactForm from "../features/ContactForm";
+import { useTranslation } from "react-i18next";
 
 function ContactSection() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Stack
@@ -31,7 +34,7 @@ function ContactSection() {
             letterSpacing="-4px"
             textTransform="uppercase"
           >
-            DROP US A LINE
+            {t("form.title")}
           </Typography>
         </Box>
         <Stack

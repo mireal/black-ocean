@@ -1,8 +1,11 @@
 import { Box, Divider, Grid2, Stack, Typography } from "@mui/material";
 import AdvantageRectangle from "../entities/AdvantageRectangle";
 import StyledButtonDark from "../shared/StyledButtonDark";
+import { useTranslation } from "react-i18next";
 
 function WhySection() {
+  const { t } = useTranslation();
+
   return (
     <>
       {/* section padding */}
@@ -31,7 +34,7 @@ function WhySection() {
             textTransform="uppercase"
             paddingBottom={{ mobileP: "15px", mobileL: "20px", desktopS: "0" }}
           >
-            Why choose Black Ocean?
+            {t("why.title")}
           </Typography>
         </Box>
 
@@ -50,9 +53,7 @@ function WhySection() {
                 fontWeight="600"
                 textTransform="uppercase"
               >
-                Expert-driven solutions, proven industry leadership, and
-                dedicated support empower your business to achieve lasting
-                success and measurable results.
+                {t("why.subtitle")}
               </Typography>
             </Box>
 
@@ -81,7 +82,7 @@ function WhySection() {
                       fontWeight="600"
                       color="primary.main"
                     >
-                      Technical Divercity
+                      {t("why.blocks.first.title")}
                     </Typography>
                   </Box>
 
@@ -92,14 +93,13 @@ function WhySection() {
                       fontSize="18px"
                       lineHeight="125%"
                     >
-                      We understand all areas of software development at a high
-                      level. Understanding the structure of the sphere enables
-                      us to offer the most effective solutions for our clients.
+                      {t("why.blocks.first.description")}
                     </Typography>
                   </Box>
                 </Stack>
               </Box>
 
+              {/* second */}
               <Box>
                 <Divider />
 
@@ -124,7 +124,7 @@ function WhySection() {
                       fontWeight="600"
                       color="primary.main"
                     >
-                      Profesional Team
+                      {t("why.blocks.second.title")}
                     </Typography>
                   </Box>
 
@@ -135,15 +135,13 @@ function WhySection() {
                       fontSize="18px"
                       lineHeight="125%"
                     >
-                      Our team comprises highly skilled professionals who work
-                      seamlessly together, combining expertise and dedication to
-                      deliver exceptional results, ensuring every project meets
-                      the highest standards.
+                      {t("why.blocks.second.description")}
                     </Typography>
                   </Box>
                 </Stack>
               </Box>
 
+              {/* third */}
               <Box>
                 <Divider />
 
@@ -168,7 +166,7 @@ function WhySection() {
                       fontWeight="600"
                       color="primary.main"
                     >
-                      Sphere Leader
+                      {t("why.blocks.third.title")}
                     </Typography>
                   </Box>
 
@@ -179,14 +177,13 @@ function WhySection() {
                       fontSize="18px"
                       lineHeight="125%"
                     >
-                      We confidently declare that our company is a leader among
-                      others. We provide the best quality for certain price
-                      level.
+                      {t("why.blocks.third.description")}
                     </Typography>
                   </Box>
                 </Stack>
               </Box>
 
+              {/* fourth */}
               <Box>
                 <Divider />
 
@@ -211,7 +208,7 @@ function WhySection() {
                       fontWeight="600"
                       color="primary.main"
                     >
-                      Full Project Support
+                      {t("why.blocks.fourth.title")}
                     </Typography>
                   </Box>
 
@@ -222,15 +219,13 @@ function WhySection() {
                       fontSize="18px"
                       lineHeight="125%"
                     >
-                      We are responsible for the work done with a guarantee for
-                      our services. On request, we provide technical support for
-                      software or web traffic.
+                      {t("why.blocks.fourth.description")}
                     </Typography>
                   </Box>
                 </Stack>
               </Box>
               <StyledButtonDark sx={{ mt: "30px" }}>
-                Become a Client
+                {t("why.button")}
               </StyledButtonDark>
             </Stack>
           </Grid2>

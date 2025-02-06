@@ -1,6 +1,9 @@
 import { Box, Grid2, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 function AboutSection() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Box
@@ -28,8 +31,7 @@ function AboutSection() {
           textTransform="uppercase"
           paddingBottom={{ mobileP: "15px", mobileL: "20px", desktopS: "0" }}
         >
-          Our aim - to supply best service in providing web traffic which will
-          grow your sales results.
+          {t("about.title")}
         </Typography>
 
         {/* content */}
@@ -74,11 +76,7 @@ function AboutSection() {
               textTransform="uppercase"
               textAlign={{ mobileP: "center", tablet: "left" }}
             >
-              Besides that, we supply software for your business which decide
-              your tasks with 100% accuracy. Mission of Black Ocean is to
-              guarantee the highest level of quality on the market. Team of
-              Black Ocean always provide technical support and service for
-              clients.
+              {t("about.description")}
             </Typography>
           </Grid2>
         </Grid2>

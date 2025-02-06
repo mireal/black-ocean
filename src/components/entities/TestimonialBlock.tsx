@@ -11,6 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import SquareOutlinedIcon from "@mui/icons-material/Square";
+import { useTranslation } from "react-i18next";
 
 export interface TestimonialContent {
   author: {
@@ -22,21 +23,11 @@ export interface TestimonialContent {
   testimonials: string[];
 }
 
-function TestimonialBlock({ content }: { content: TestimonialContent }) {
-  const testimonials = content.testimonials.map((item, index) => (
-    <ListItem key={index} disableGutters disablePadding>
-      <ListItemIcon
-        sx={{
-          minWidth: "30px",
-          color: "primary.light",
-        }}
-      >
-        <SquareOutlinedIcon sx={{ width: "0.6em" }} />
-      </ListItemIcon>
-
-      <ListItemText>{item}</ListItemText>
-    </ListItem>
-  ));
+function TestimonialBlock({ keyName }: { keyName: string }) {
+  const { t } = useTranslation();
+  const tasks = t(`testimonials.cards.${keyName}.tasks`, {
+    returnObjects: true,
+  }) as string[];
 
   return (
     <>
@@ -56,8 +47,8 @@ function TestimonialBlock({ content }: { content: TestimonialContent }) {
               {/* avatar + credentials + info */}
               <Stack direction="row" gap="20px">
                 <Avatar
-                  src={content.author.imageSrc}
-                  alt={content.author.name}
+                  src={t(`testimonials.cards.${keyName}.image`)}
+                  alt={t(`testimonials.cards.${keyName}.name`)}
                   variant="square"
                   sx={{
                     width: "80px",
@@ -73,7 +64,7 @@ function TestimonialBlock({ content }: { content: TestimonialContent }) {
                     fontWeight="600"
                     lineHeight="120%"
                   >
-                    {content.author.name}
+                    {t(`testimonials.cards.${keyName}.name`)}
                   </Typography>
 
                   <Typography
@@ -83,7 +74,7 @@ function TestimonialBlock({ content }: { content: TestimonialContent }) {
                     fontWeight="600"
                     lineHeight="130%"
                   >
-                    {content.author.job}
+                    {t(`testimonials.cards.${keyName}.position`)}
                   </Typography>
                 </Stack>
               </Stack>
@@ -95,7 +86,7 @@ function TestimonialBlock({ content }: { content: TestimonialContent }) {
                 fontWeight="600"
                 lineHeight="130%"
               >
-                {content.about}
+                {t(`testimonials.cards.${keyName}.feedback`)}
               </Typography>
             </Stack>
           </Grid2>
@@ -108,7 +99,24 @@ function TestimonialBlock({ content }: { content: TestimonialContent }) {
               fontWeight="600"
               lineHeight="125%"
             >
-              <List>{testimonials}</List>
+              <List>
+                {tasks.map((_, index) => (
+                  <ListItem key={index} disableGutters disablePadding>
+                    <ListItemIcon
+                      sx={{
+                        minWidth: "30px",
+                        color: "primary.light",
+                      }}
+                    >
+                      <SquareOutlinedIcon sx={{ width: "0.6em" }} />
+                    </ListItemIcon>
+
+                    <ListItemText>
+                      {t(`testimonials.cards.${keyName}.tasks.${index}`)}
+                    </ListItemText>
+                  </ListItem>
+                ))}
+              </List>
             </Typography>
           </Grid2>
         </Grid2>

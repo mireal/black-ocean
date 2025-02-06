@@ -1,7 +1,10 @@
 import { Box, Grid2, Typography } from "@mui/material";
 import StepCard from "../entities/StepCard";
+import { useTranslation } from "react-i18next";
 
 function StepsSection() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Box
@@ -32,7 +35,7 @@ function StepsSection() {
           textTransform="uppercase"
           paddingBottom={{ mobileP: "15px", mobileL: "20px", desktopS: "0" }}
         >
-          THIS IS EXACTLY HOW IT WORKS
+          {t("steps.title")}
         </Typography>
 
         <Grid2 container columns={{ mobileP: 1, tablet: 3 }} rowGap="40px">
@@ -48,42 +51,19 @@ function StepsSection() {
               fontWeight="600"
               textTransform="uppercase"
             >
-              Over the long experience of working with clients, we have built
-              our own scheme of work. Our cooperation scheme is extremely
-              effective. We are able to provide you with the highest quality
-              service and products.
+              {t("steps.subtitle")}
             </Typography>
           </Grid2>
           <Grid2 size={1}>
-            <StepCard
-              content={{
-                title: "//01",
-                subtitle: "Your Request",
-                paragraph: `If you are interested, you can contact us to discuss the tasks of your business.
-                                    Before applying, you need to draw up a clear request.`,
-              }}
-            />
+            <StepCard keyName="first" />
           </Grid2>
 
           <Grid2 size={1}>
-            <StepCard
-              content={{
-                title: "//02",
-                subtitle: "Custom Solution",
-                paragraph: `At the second stage, our team processes your request and selects the best solutions for you. 
-                                    With future results guaranteed.`,
-              }}
-            />
+            <StepCard keyName="second" />
           </Grid2>
 
           <Grid2 size={1}>
-            <StepCard
-              content={{
-                title: "//03",
-                subtitle: "Launch Agreement",
-                paragraph: `Client and Black Ocean agree the date and time of start usage of traffic and software for business.`,
-              }}
-            />
+            <StepCard keyName="third" />
           </Grid2>
         </Grid2>
 

@@ -2,6 +2,7 @@ import { Box, Input, styled } from "@mui/material";
 import StyledButton from "../shared/StyledButton";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { useTranslation } from "react-i18next";
 
 const InputField = styled(Input)(({ theme }) => ({
   backgroundColor: "transparent",
@@ -41,6 +42,8 @@ const validationSchema = Yup.object({
 });
 
 export default function ContactForm() {
+  const { t } = useTranslation();
+
   const formik = useFormik({
     initialValues: initialValues,
     validationSchema: validationSchema,
@@ -65,7 +68,7 @@ export default function ContactForm() {
           value={formik.values.name}
           error={formik.touched.name && !!formik.errors.name}
           onChange={formik.handleChange}
-          placeholder="NAME"
+          placeholder={t("form.placeholder.name")}
         />
 
         <InputField
@@ -74,7 +77,7 @@ export default function ContactForm() {
           value={formik.values.email}
           error={formik.touched.email && !!formik.errors.email}
           onChange={formik.handleChange}
-          placeholder="EMAIL"
+          placeholder={t("form.placeholder.email")}
         />
 
         <InputField
@@ -83,7 +86,7 @@ export default function ContactForm() {
           value={formik.values.phone}
           error={formik.touched.phone && !!formik.errors.phone}
           onChange={formik.handleChange}
-          placeholder="PHONE NUMBER"
+          placeholder={t("form.placeholder.phone")}
         />
 
         <InputField
@@ -92,7 +95,7 @@ export default function ContactForm() {
           value={formik.values.message}
           error={formik.touched.message && !!formik.errors.message}
           onChange={formik.handleChange}
-          placeholder="MESSAGE"
+          placeholder={t("form.placeholder.message")}
           multiline
           sx={{
             minHeight: "200px",
@@ -102,7 +105,7 @@ export default function ContactForm() {
         />
 
         <StyledButton fullWidth type="submit" sx={{ mt: "15px" }}>
-          SUBMIT
+          {t("form.button")}
         </StyledButton>
       </Box>
     </>
