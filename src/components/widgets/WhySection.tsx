@@ -34,7 +34,7 @@ function WhySection() {
             textTransform="uppercase"
             paddingBottom={{ mobileP: "15px", mobileL: "20px", desktopS: "0" }}
           >
-            {t('why.title')}
+            {t("why.title")}
           </Typography>
         </Box>
 
@@ -53,7 +53,7 @@ function WhySection() {
                 fontWeight="600"
                 textTransform="uppercase"
               >
-                {t('why.subtitle')}
+                {t("why.subtitle")}
               </Typography>
             </Box>
 
@@ -82,7 +82,7 @@ function WhySection() {
                       fontWeight="600"
                       color="primary.main"
                     >
-                      {t('why.blocks.first.title')}
+                      {t("why.blocks.first.title")}
                     </Typography>
                   </Box>
 
@@ -93,7 +93,7 @@ function WhySection() {
                       fontSize="18px"
                       lineHeight="125%"
                     >
-                      {t('why.blocks.first.description')}
+                      {t("why.blocks.first.description")}
                     </Typography>
                   </Box>
                 </Stack>
@@ -124,7 +124,7 @@ function WhySection() {
                       fontWeight="600"
                       color="primary.main"
                     >
-                      {t('why.blocks.second.title')}
+                      {t("why.blocks.second.title")}
                     </Typography>
                   </Box>
 
@@ -135,7 +135,7 @@ function WhySection() {
                       fontSize="18px"
                       lineHeight="125%"
                     >
-                      {t('why.blocks.second.description')}
+                      {t("why.blocks.second.description")}
                     </Typography>
                   </Box>
                 </Stack>
@@ -166,7 +166,7 @@ function WhySection() {
                       fontWeight="600"
                       color="primary.main"
                     >
-                      {t('why.blocks.third.title')}
+                      {t("why.blocks.third.title")}
                     </Typography>
                   </Box>
 
@@ -177,8 +177,7 @@ function WhySection() {
                       fontSize="18px"
                       lineHeight="125%"
                     >
-                      {t('why.blocks.third.description')}
-
+                      {t("why.blocks.third.description")}
                     </Typography>
                   </Box>
                 </Stack>
@@ -209,8 +208,7 @@ function WhySection() {
                       fontWeight="600"
                       color="primary.main"
                     >
-                      {t('why.blocks.fourth.title')}
-
+                      {t("why.blocks.fourth.title")}
                     </Typography>
                   </Box>
 
@@ -221,14 +219,13 @@ function WhySection() {
                       fontSize="18px"
                       lineHeight="125%"
                     >
-                      {t('why.blocks.fourth.description')}
-
+                      {t("why.blocks.fourth.description")}
                     </Typography>
                   </Box>
                 </Stack>
               </Box>
               <StyledButtonDark sx={{ mt: "30px" }}>
-                {t('why.button')}
+                {t("why.button")}
               </StyledButtonDark>
             </Stack>
           </Grid2>

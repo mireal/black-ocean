@@ -1,9 +1,7 @@
 import { Grid2 } from "@mui/material";
 import NumberCard from "../entities/NumberCard";
 
-
 function NumberCardsBlock({ keys }: { keys: string[] }) {
-
   return (
     <>
       <Grid2

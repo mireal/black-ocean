@@ -27,12 +27,8 @@ function Navbar() {
           size={3}
           sx={{ display: { mobileP: "none", desktopS: "block" } }}
         >
-          <Typography
-            variant="body1"
-            fontSize={14}
-            fontWeight={600}
-          >
-            <LanguageButton/>
+          <Typography variant="body1" fontSize={14} fontWeight={600}>
+            <LanguageButton />
           </Typography>
         </Grid2>
 
@@ -47,8 +43,8 @@ function Navbar() {
             <Typography
               variant="h6"
               color="primary.main"
-              textTransform='uppercase'
-              fontWeight='600'
+              textTransform="uppercase"
+              fontWeight="600"
               sx={{
                 "& a, & a:visited, & a:active": {
                   color: "inherit",
@@ -56,16 +52,16 @@ function Navbar() {
               }}
             >
               <ListItem component={"a"} href="#about-section" disablePadding>
-                {t('navbarLinks.about')}
+                {t("navbarLinks.about")}
               </ListItem>
               <ListItem component={"a"} href="#services-section" disablePadding>
-                {t('navbarLinks.services')}
+                {t("navbarLinks.services")}
               </ListItem>
               <ListItem component={"a"} href="#bridgify-section" disablePadding>
-                {t('navbarLinks.bridgify')}
+                {t("navbarLinks.bridgify")}
               </ListItem>
               <ListItem component={"a"} href="#why-section" disablePadding>
-                {t('navbarLinks.whyWe')}
+                {t("navbarLinks.whyWe")}
               </ListItem>
             </Typography>
           </List>

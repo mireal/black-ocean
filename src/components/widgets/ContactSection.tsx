@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 function ContactSection() {
   const { t } = useTranslation();
-  
+
   return (
     <>
       <Stack
@@ -34,7 +34,7 @@ function ContactSection() {
             letterSpacing="-4px"
             textTransform="uppercase"
           >
-            {t('form.title')}
+            {t("form.title")}
           </Typography>
         </Box>
         <Stack

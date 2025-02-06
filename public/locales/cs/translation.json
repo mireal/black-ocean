@@ -253,10 +253,10 @@
     "title": "NAPIŠTE NÁM",
     "button": "Odeslat",
     "placeholder": {
-        "name": "JMÉNO",
-        "email": "EMAIL",
-        "phone": "TELEFON",
-        "message": "ZPRÁVA"
+      "name": "JMÉNO",
+      "email": "EMAIL",
+      "phone": "TELEFON",
+      "message": "ZPRÁVA"
     }
   }
 }

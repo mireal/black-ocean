@@ -68,7 +68,7 @@ export default function ContactForm() {
           value={formik.values.name}
           error={formik.touched.name && !!formik.errors.name}
           onChange={formik.handleChange}
-          placeholder={t('form.placeholder.name')}
+          placeholder={t("form.placeholder.name")}
         />
 
         <InputField
@@ -77,7 +77,7 @@ export default function ContactForm() {
           value={formik.values.email}
           error={formik.touched.email && !!formik.errors.email}
           onChange={formik.handleChange}
-          placeholder={t('form.placeholder.email')}
+          placeholder={t("form.placeholder.email")}
         />
 
         <InputField
@@ -86,7 +86,7 @@ export default function ContactForm() {
           value={formik.values.phone}
           error={formik.touched.phone && !!formik.errors.phone}
           onChange={formik.handleChange}
-          placeholder={t('form.placeholder.phone')}
+          placeholder={t("form.placeholder.phone")}
         />
 
         <InputField
@@ -95,7 +95,7 @@ export default function ContactForm() {
           value={formik.values.message}
           error={formik.touched.message && !!formik.errors.message}
           onChange={formik.handleChange}
-          placeholder={t('form.placeholder.message')}
+          placeholder={t("form.placeholder.message")}
           multiline
           sx={{
             minHeight: "200px",
@@ -105,7 +105,7 @@ export default function ContactForm() {
         />
 
         <StyledButton fullWidth type="submit" sx={{ mt: "15px" }}>
-          {t('form.button')}
+          {t("form.button")}
         </StyledButton>
       </Box>
     </>

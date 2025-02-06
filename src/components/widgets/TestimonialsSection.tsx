@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 function TestimonialsSection() {
   const { t } = useTranslation();
-  const keys = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth']
+  const keys = ["first", "second", "third", "fourth", "fifth", "sixth"];
 
   return (
     <>
@@ -30,7 +30,7 @@ function TestimonialsSection() {
           textTransform="uppercase"
           mb="40px"
         >
-          {t('testimonials.title')}
+          {t("testimonials.title")}
         </Typography>
 
         <TestimonialsContent keys={keys} />

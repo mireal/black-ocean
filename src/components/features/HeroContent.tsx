@@ -27,7 +27,7 @@ function HeroContent() {
             width={"30vw"}
             sx={{ display: { mobileP: "none", tablet: "inline-block" } }}
           />
-          {t('hero.title')}
+          {t("hero.title")}
         </Typography>
 
         {/* subtitle */}
@@ -50,7 +50,7 @@ function HeroContent() {
               lineHeight={"125%"}
               fontWeight={600}
             >
-              {t('hero.subtitle')}
+              {t("hero.subtitle")}
             </Typography>
           </Grid2>
         </Grid2>
@@ -80,7 +80,7 @@ function HeroContent() {
                 })
               }
             >
-              {t('hero.scroll')}
+              {t("hero.scroll")}
             </Button>
           </Grid2>
         </Grid2>

@@ -25,7 +25,9 @@ export interface TestimonialContent {
 
 function TestimonialBlock({ keyName }: { keyName: string }) {
   const { t } = useTranslation();
-  const tasks = t(`testimonials.cards.${keyName}.tasks`, { returnObjects: true }) as string[]
+  const tasks = t(`testimonials.cards.${keyName}.tasks`, {
+    returnObjects: true,
+  }) as string[];
 
   return (
     <>
@@ -97,23 +99,24 @@ function TestimonialBlock({ keyName }: { keyName: string }) {
               fontWeight="600"
               lineHeight="125%"
             >
-              <List>{
-                  tasks.map((_, index) => (
-                    <ListItem key={index} disableGutters disablePadding>
-                      <ListItemIcon
-                        sx={{
-                          minWidth: "30px",
-                          color: "primary.light",
-                        }}
-                      >
-                        <SquareOutlinedIcon sx={{ width: "0.6em" }} />
-                      </ListItemIcon>
+              <List>
+                {tasks.map((_, index) => (
+                  <ListItem key={index} disableGutters disablePadding>
+                    <ListItemIcon
+                      sx={{
+                        minWidth: "30px",
+                        color: "primary.light",
+                      }}
+                    >
+                      <SquareOutlinedIcon sx={{ width: "0.6em" }} />
+                    </ListItemIcon>
 
-                      <ListItemText>{t(`testimonials.cards.${keyName}.tasks.${index}`)}</ListItemText>
-                    </ListItem>
-                  ))
-                }
-                </List>
+                    <ListItemText>
+                      {t(`testimonials.cards.${keyName}.tasks.${index}`)}
+                    </ListItemText>
+                  </ListItem>
+                ))}
+              </List>
             </Typography>
           </Grid2>
         </Grid2>

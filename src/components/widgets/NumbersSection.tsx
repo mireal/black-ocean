@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 function NumbersSection() {
   const { t } = useTranslation();
-  const keys = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth']
+  const keys = ["first", "second", "third", "fourth", "fifth", "sixth"];
 
   return (
     <>
@@ -39,7 +39,7 @@ function NumbersSection() {
               display: "inline-block",
             }}
           >
-            {t('numbers.title 1')}
+            {t("numbers.title 1")}
           </Box>
           <Box
             display={{ mobileP: "none", mobileL: "inline-block" }}
@@ -53,7 +53,7 @@ function NumbersSection() {
               textAlign: { mobileP: "left", mobileL: "right" },
             }}
           >
-            {t('numbers.title 2')}
+            {t("numbers.title 2")}
           </Box>
         </Typography>
 
@@ -69,7 +69,7 @@ function NumbersSection() {
               fontWeight="600"
               textTransform="uppercase"
             >
-              {t('numbers.subtitle')}
+              {t("numbers.subtitle")}
             </Typography>
           </Grid2>
         </Grid2>

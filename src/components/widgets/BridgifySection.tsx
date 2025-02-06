@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 function BridgifySection() {
   const { t } = useTranslation();
 
-  
   return (
     <>
       {/* section padding */}
@@ -40,7 +39,7 @@ function BridgifySection() {
           fontWeight="600"
           textTransform="uppercase"
         >
-          {t('bridgify.title')}
+          {t("bridgify.title")}
         </Typography>
 
         {/* content header */}
@@ -64,7 +63,7 @@ function BridgifySection() {
               fontWeight="600"
               textTransform="uppercase"
             >
-              {t('bridgify.description')}
+              {t("bridgify.description")}
             </Typography>
           </Grid2>
         </Grid2>
@@ -89,15 +88,11 @@ function BridgifySection() {
                   desktopL: "268px",
                 }}
               >
-                <Box>
-                  {t('bridgify.subtitle 1')}
-                </Box>
-                <Box mb="20px">
-                  {t('bridgify.subtitle 2')}
-                </Box>
+                <Box>{t("bridgify.subtitle 1")}</Box>
+                <Box mb="20px">{t("bridgify.subtitle 2")}</Box>
 
                 <StyledButton endIcon={<SouthEastSharpIcon />}>
-                  {t('bridgify.button')}
+                  {t("bridgify.button")}
                 </StyledButton>
               </Box>
             </Typography>

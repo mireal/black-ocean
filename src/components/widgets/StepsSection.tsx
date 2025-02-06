@@ -3,8 +3,8 @@ import StepCard from "../entities/StepCard";
 import { useTranslation } from "react-i18next";
 
 function StepsSection() {
-    const { t } = useTranslation();
-  
+  const { t } = useTranslation();
+
   return (
     <>
       <Box
@@ -35,7 +35,7 @@ function StepsSection() {
           textTransform="uppercase"
           paddingBottom={{ mobileP: "15px", mobileL: "20px", desktopS: "0" }}
         >
-          {t('steps.title')}
+          {t("steps.title")}
         </Typography>
 
         <Grid2 container columns={{ mobileP: 1, tablet: 3 }} rowGap="40px">
@@ -51,25 +51,19 @@ function StepsSection() {
               fontWeight="600"
               textTransform="uppercase"
             >
-              {t('steps.subtitle')}
+              {t("steps.subtitle")}
             </Typography>
           </Grid2>
           <Grid2 size={1}>
-            <StepCard
-              keyName="first"
-            />
+            <StepCard keyName="first" />
           </Grid2>
 
           <Grid2 size={1}>
-            <StepCard
-              keyName="second"
-            />
+            <StepCard keyName="second" />
           </Grid2>
 
           <Grid2 size={1}>
-            <StepCard
-              keyName="third"
-            />
+            <StepCard keyName="third" />
           </Grid2>
         </Grid2>
 

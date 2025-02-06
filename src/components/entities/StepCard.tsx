@@ -1,9 +1,9 @@
 import { Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
-function StepCard({ keyName }: { keyName:string }) {
-    const { t } = useTranslation();
-  
+function StepCard({ keyName }: { keyName: string }) {
+  const { t } = useTranslation();
+
   return (
     <>
       <Box

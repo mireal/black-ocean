@@ -5,9 +5,16 @@ import { useTranslation } from "react-i18next";
 
 function OurServices() {
   const { t } = useTranslation();
-  
+
   // const blocks: ServiceBlockContent[] = [
-  const keys = ['iosApps', 'androidApps', 'macOS', 'crm', 'analysis', 'webTraffic']
+  const keys = [
+    "iosApps",
+    "androidApps",
+    "macOS",
+    "crm",
+    "analysis",
+    "webTraffic",
+  ];
   //   {
   //     title: "iOS Apps",
   //     caption:
@@ -99,7 +106,7 @@ function OurServices() {
           }}
           mb={{ mobileP: "20px", tablet: "30px" }}
         >
-          {t('services.title')}
+          {t("services.title")}
         </Typography>
         <Divider />
 
@@ -122,7 +129,7 @@ function OurServices() {
               textWrap: "nowrap",
             }}
           >
-            {t('services.button')}
+            {t("services.button")}
           </StyledButton>
         </Box>
       </Box>

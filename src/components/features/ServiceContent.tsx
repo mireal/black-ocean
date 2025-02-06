@@ -9,11 +9,12 @@ import {
 import SquareOutlinedIcon from "@mui/icons-material/Square";
 import { useTranslation } from "react-i18next";
 
-
 function ServiceBlock({ nameKey }: { nameKey: string }) {
   const { t } = useTranslation();
 
-  const content = t(`services.blocks.${nameKey}.content`, { returnObjects: true }) as string[]
+  const content = t(`services.blocks.${nameKey}.content`, {
+    returnObjects: true,
+  }) as string[];
 
   return (
     <>
@@ -48,21 +49,21 @@ function ServiceBlock({ nameKey }: { nameKey: string }) {
               fontWeight={"600"}
               lineHeight={"125%"}
             >
-              {
-                content.map((text, index) => (
-                  <ListItem key={index} disableGutters disablePadding>
-                    <ListItemIcon
-                      sx={{
-                        minWidth: "30px",
-                        color: "white",
-                      }}
-                    >
-                      <SquareOutlinedIcon sx={{ width: "0.6em" }} />
-                    </ListItemIcon>
-                    <ListItemText>{t(`services.blocks.${nameKey}.content.${index}`)}</ListItemText>
-                  </ListItem>
-                ))
-              }
+              {content.map((_, index) => (
+                <ListItem key={index} disableGutters disablePadding>
+                  <ListItemIcon
+                    sx={{
+                      minWidth: "30px",
+                      color: "white",
+                    }}
+                  >
+                    <SquareOutlinedIcon sx={{ width: "0.6em" }} />
+                  </ListItemIcon>
+                  <ListItemText>
+                    {t(`services.blocks.${nameKey}.content.${index}`)}
+                  </ListItemText>
+                </ListItem>
+              ))}
             </Typography>
           </Box>
           <Box
@@ -89,8 +90,7 @@ function ServiceBlock({ nameKey }: { nameKey: string }) {
   );
 }
 
-function ServiceContent({keys}: {keys:string[]}) {
-
+function ServiceContent({ keys }: { keys: string[] }) {
   return (
     <>
       <Box display="flex" flexDirection="column">

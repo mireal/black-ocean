@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 function AboutSection() {
   const { t } = useTranslation();
-  
+
   return (
     <>
       <Box
@@ -31,7 +31,7 @@ function AboutSection() {
           textTransform="uppercase"
           paddingBottom={{ mobileP: "15px", mobileL: "20px", desktopS: "0" }}
         >
-          {t('about.title')}
+          {t("about.title")}
         </Typography>
 
         {/* content */}
@@ -76,7 +76,7 @@ function AboutSection() {
               textTransform="uppercase"
               textAlign={{ mobileP: "center", tablet: "left" }}
             >
-              {t('about.description')}
+              {t("about.description")}
             </Typography>
           </Grid2>
         </Grid2>

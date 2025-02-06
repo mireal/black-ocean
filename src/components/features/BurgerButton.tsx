@@ -93,24 +93,24 @@ function BurgerButtonMenu() {
                   href="#about-section"
                   onClick={handleClose}
                 >
-                  {t('navbarLinks.about')}
+                  {t("navbarLinks.about")}
                 </ListItem>
                 <ListItem component={"a"} href="#" onClick={handleClose}>
-                  {t('navbarLinks.products')}
+                  {t("navbarLinks.products")}
                 </ListItem>
                 <ListItem
                   component={"a"}
                   href="#why-section"
                   onClick={handleClose}
                 >
-                  {t('navbarLinks.whyWe')}
+                  {t("navbarLinks.whyWe")}
                 </ListItem>
                 <ListItem
                   component={"a"}
                   href="#contact-form"
                   onClick={handleClose}
                 >
-                  {t('navbarLinks.contacts')}
+                  {t("navbarLinks.contacts")}
                 </ListItem>
               </Typography>
             </List>
@@ -136,7 +136,7 @@ function BurgerButtonMenu() {
               fontSize={{ mobileP: "28px", mobileL: "34px" }}
               fontWeight={500}
             >
-              <LanguageButton/>
+              <LanguageButton />
             </Typography>
           </Stack>
         </Box>

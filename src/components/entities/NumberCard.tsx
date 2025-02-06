@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 function NumberCard({ keyName }: { keyName: string }) {
   const { t } = useTranslation();
-  
+
   return (
     <>
       <Box pt="40px" pr={{ mobileL: "20px", desktopS: "40px" }}>
