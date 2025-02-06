@@ -11,9 +11,11 @@ import CookiePolicy from "./components/pages/CookiePolicy.tsx";
 import RiskManagementPolicy from "./components/pages/RiskManagementPolicy.tsx";
 import TermsAndConditions from "./components/pages/TermsAndConditions.tsx";
 import "./providers/i18n.ts";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
+    <SpeedInsights/>
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter>
@@ -32,5 +34,5 @@ createRoot(document.getElementById("root")!).render(
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
-  </StrictMode>,
+  </StrictMode>
 );
