@@ -5,3 +5,7 @@
   font-style: normal;
   src: url(./public/fonts/OpenSans-Regular.woff2);
 } /*# sourceMappingURL=styles.css.map */
+
+html {
+  scroll-behavior: smooth;
+}
