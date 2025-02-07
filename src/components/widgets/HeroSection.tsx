@@ -30,7 +30,6 @@ function HeroSection() {
           sx={{
             position: "absolute",
             top: { mobileP: "82px", desktopS: "146px" },
-            // left:'50%',
             width: "100%",
           }}
         />
@@ -67,7 +66,6 @@ function HeroSection() {
           <Divider
             orientation="vertical"
             sx={{
-              // display:{mobileP:'none', tablet:'block'},
               position: "absolute",
               top: 0,
               height: "100vh",
