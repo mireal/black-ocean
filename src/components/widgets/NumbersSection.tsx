@@ -30,30 +30,34 @@ function NumbersSection() {
             desktopM: "64px",
           }}
           textTransform="uppercase"
+          whiteSpace={{ mobileP: "break-spaces", tablet: "nowrap" }}
           letterSpacing="-2px"
-          noWrap
           mb={{ mobileP: "20px", tablet: "30px" }}
           display={{ mobileP: "block", desktopL: "flex" }}
           justifyContent="space-between"
+          flexWrap="wrap"
         >
           <Box
             sx={{
               textAlign: "left",
               display: "inline-block",
+              flex: 1,
             }}
           >
             {t("numbers.title 1")}
+            <Box
+              display={{ mobileP: "none", mobileL: "inline-block" }}
+              paddingX={{ mobileP: "10px", desktopS: "15px", desktopL: "7px" }}
+            >
+              /
+            </Box>
           </Box>
-          <Box
-            display={{ mobileP: "none", mobileL: "inline-block" }}
-            marginX={{ mobileP: "30px", desktopL: 0 }}
-          >
-            /
-          </Box>
+
           <Box
             sx={{
               display: { mobileP: "block", desktopL: "inline-block" },
               textAlign: { mobileP: "left", mobileL: "right" },
+              flex: 1,
             }}
           >
             {t("numbers.title 2")}
