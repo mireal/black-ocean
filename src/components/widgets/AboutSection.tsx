@@ -69,7 +69,10 @@ function AboutSection() {
           </Grid2>
 
           {/* text */}
-          <Grid2 size={1} alignSelf="center">
+          <Grid2
+            size={1}
+            alignSelf="center"
+          >
             <Typography
               variant="body1"
               color="primary.light"
@@ -77,6 +80,7 @@ function AboutSection() {
               fontWeight="600"
               textTransform="uppercase"
               textAlign={{ mobileP: "center", tablet: "left" }}
+              width={{ mobileP: "100%", displayS: "300px" }}
             >
               {t("about.description")}
             </Typography>
