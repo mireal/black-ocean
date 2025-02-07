@@ -226,7 +226,7 @@ function WhySection() {
                   </Box>
                 </Stack>
               </Box>
-              <StyledButtonDark sx={{ mt: "30px" }}>
+              <StyledButtonDark sx={{ mt: "30px" }} href="#contact-form">
                 {t("why.button")}
               </StyledButtonDark>
             </Stack>

@@ -257,6 +257,27 @@
       "email": "EMAIL",
       "phone": "TELEFON",
       "message": "ZPRÁVA"
+    },
+    "validation": {
+      "name": {
+        "min": "Jméno musí mít alespoň 2 znaky",
+        "max": "Jméno musí mít maximálně 50 znaků",
+        "match": "Jméno může obsahovat pouze písmena a mezery",
+        "required": "Jméno je povinné"
+      },
+      "phone": {
+        "match": "Telefonní číslo musí mít 8 až 15 číslic",
+        "required": "Telefonní číslo je povinné"
+      },
+      "email": {
+        "email": "Neplatný formát emailové adresy",
+        "required": "Email je povinný"
+      },
+      "message": {
+        "min": "Zpráva musí mít alespoň 10 znaků",
+        "max": "Zpráva musí mít maximálně 500 znaků",
+        "required": "Zpráva je povinná"
+      }
     }
   }
 }

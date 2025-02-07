@@ -59,6 +59,7 @@ function OurServices() {
           </Box>
           <StyledButton
             variant="contained"
+            href="#contact-form"
             sx={{
               paddingX: { mobileP: "72px", desktopS: "120px" },
               alignSelf: "center",
