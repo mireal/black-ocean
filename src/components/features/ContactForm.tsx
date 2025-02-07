@@ -28,30 +28,31 @@ const initialValues = {
   message: "",
 };
 
-
-
 export default function ContactForm() {
   const { t } = useTranslation();
 
   const validationSchema = Yup.object({
     name: Yup.string()
-      .min(2, t('form.validation.name.min'))
-      .max(50, t('form.validation.name.max'))
-      .matches(/^[a-zA-Z\s]+$/, t('form.validation.name.match'))
-      .required(t('form.validation.name.required')),
+      .min(2, t("form.validation.name.min"))
+      .max(50, t("form.validation.name.max"))
+      .matches(/^[a-zA-Z\s]+$/, t("form.validation.name.match"))
+      .required(t("form.validation.name.required")),
 
     phone: Yup.string()
-      .matches(/\+?(\d{1,2})?[ .-]?\(?(\d{3})\)?[ .-]?(\d{3})[ .-]?(\d{4})/, t('form.validation.phone.match'))
-      .required(t('form.validation.phone.required')),
+      .matches(
+        /\+?(\d{1,2})?[ .-]?\(?(\d{3})\)?[ .-]?(\d{3})[ .-]?(\d{4})/,
+        t("form.validation.phone.match"),
+      )
+      .required(t("form.validation.phone.required")),
 
     email: Yup.string()
-      .email(t('form.validation.email.email'))
-      .required(t('form.validation.email.required')),
+      .email(t("form.validation.email.email"))
+      .required(t("form.validation.email.required")),
 
     message: Yup.string()
-      .min(10, t('form.validation.message.min'))
-      .max(500, t('form.validation.message.max'))
-      .required(t('form.validation.message.required')),
+      .min(10, t("form.validation.message.min"))
+      .max(500, t("form.validation.message.max"))
+      .required(t("form.validation.message.required")),
   });
 
   const formik = useFormik({
@@ -113,16 +114,17 @@ export default function ContactForm() {
             display: "flex",
             alignItems: "start",
           }}
-        /> 
+        />
 
-        <Box sx={{
-          fontSize: "16px",
-          fontWeight: "600",
-          color:'primary.light'
-        }}>
+        <Box
+          sx={{
+            fontSize: "16px",
+            fontWeight: "600",
+            color: "primary.light",
+          }}
+        >
           {Object.values(formik.errors)[0]}
         </Box>
-            
 
         <StyledButton fullWidth type="submit" sx={{ mt: "15px" }}>
           {t("form.button")}

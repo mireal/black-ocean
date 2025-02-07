@@ -8,9 +8,9 @@ function HeroSection() {
       <Box
         height={"100vh"}
         width={"100vw"}
-        display='flex'
-        flexDirection='column'
-        alignItems='center'
+        display="flex"
+        flexDirection="column"
+        alignItems="center"
         paddingX={{
           mobileP: "10px",
           mobileL: "16px",
@@ -28,14 +28,13 @@ function HeroSection() {
         <Divider
           sx={{
             position: "absolute",
-            top: { mobileP: "82px", desktopS: "166px" },
+            top: { mobileP: "82px", desktopS: "146px" },
             // left:'50%',
             width: "100%",
           }}
         />
 
-        <Box maxWidth="1368px" position='relative' width='100%' height='100%'>
-
+        <Box maxWidth="1368px" position="relative" width="100%" height="100%">
           {/* right corner */}
           <Divider
             orientation="vertical"
@@ -70,11 +69,11 @@ function HeroSection() {
               top: 0,
               height: "100vh",
               left: {
-                mobileP: '-100%',
+                mobileP: "-100%",
                 tablet: "199px",
                 desktopS: "315px",
-                desktopM: '460px',
-                desktopL: '451px'
+                desktopM: "460px",
+                desktopL: "451px",
               },
             }}
           />

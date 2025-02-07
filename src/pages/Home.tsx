@@ -13,7 +13,7 @@ import WhySection from "../components/widgets/WhySection";
 function Home() {
   return (
     <>
-      <Box overflow='hidden'>
+      <Box overflow="hidden">
         <HeroSection />
         <OurServices />
         <AboutSection />

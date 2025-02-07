@@ -12,7 +12,7 @@ const buttonStyles = {
   },
 };
 
-export default function LanguageButton({gap='10px'}) {
+export default function LanguageButton({ gap = "10px" }) {
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng: string) => {

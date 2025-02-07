@@ -7,16 +7,17 @@ function StepsSection() {
 
   return (
     <Stack
-      alignItems='center'
+      alignItems="center"
       sx={{
         backgroundImage: 'url("./assets/images/hero-bg.png")',
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-      }}>
+      }}
+    >
       <Box
         maxWidth="1368px"
-        width='100%'
+        width="100%"
         paddingY={{ mobileP: "60px", tablet: "80px", desktopS: "120px" }}
         paddingX={{
           mobileP: "10px",

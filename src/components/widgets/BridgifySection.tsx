@@ -8,19 +8,19 @@ function BridgifySection() {
 
   return (
     <Stack
-      alignItems='center'
+      alignItems="center"
       sx={{
         backgroundImage: 'url("./assets/images/bridgify-bg.png")',
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
-
-      }}>
+      }}
+    >
       {/* section padding */}
       <Box
         id={"bridgify-section"}
         maxWidth="1368px"
-        width='100%'
+        width="100%"
         paddingY={{ mobileP: "60px", tablet: "80px", desktopS: "120px" }}
         paddingX={{
           mobileP: "10px",
@@ -29,7 +29,6 @@ function BridgifySection() {
           desktopS: "40px",
         }}
         position="relative"
-
       >
         {/* title */}
         <Typography

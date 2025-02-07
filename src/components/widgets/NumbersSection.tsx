@@ -7,10 +7,10 @@ function NumbersSection() {
   const keys = ["first", "second", "third", "fourth", "fifth", "sixth"];
 
   return (
-    <Stack alignItems='center'>
+    <Stack alignItems="center">
       <Box
         maxWidth="1368px"
-        width='100%'
+        width="100%"
         paddingY={{ mobileP: "60px", tablet: "80px", desktopS: "120px" }}
         paddingX={{
           mobileP: "10px",

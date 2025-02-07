@@ -9,14 +9,12 @@ function Navbar() {
 
   return (
     <>
-
       <Grid2
         container
         wrap="nowrap"
         paddingTop={{ mobileP: 0, desktopS: "20px" }}
         height={{ mobileP: "82px", desktopS: "146px" }}
-        
-        width='100%'
+        width="100%"
       >
         {/* logo */}
         <Grid2
@@ -29,9 +27,8 @@ function Navbar() {
         {/* switch language */}
         <Grid2
           size={2}
-          sx={{ 
-            display: { mobileP: "none", desktopS: "block" }, 
-            
+          sx={{
+            display: { mobileP: "none", desktopS: "block" },
           }}
         >
           <Typography variant="body1" fontSize={14} fontWeight={600}>
@@ -51,7 +48,7 @@ function Navbar() {
               variant="h6"
               color="primary.main"
               textTransform="uppercase"
-              fontSize='14px'
+              fontSize="14px"
               fontWeight="600"
               sx={{
                 "& a, & a:visited, & a:active": {
@@ -83,10 +80,7 @@ function Navbar() {
             justifyContent: "flex-end",
           }}
         >
-          <Typography 
-          variant="h5" 
-          fontWeight="600"
-          fontSize='18px'>
+          <Typography variant="h5" fontWeight="600" fontSize="18px">
             <Link
               component={"a"}
               href="tel:+420773635962"

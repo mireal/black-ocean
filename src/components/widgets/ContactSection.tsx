@@ -6,12 +6,10 @@ function ContactSection() {
   const { t } = useTranslation();
 
   return (
-    <Stack
-      alignItems='center'
-      sx={{ backgroundColor: "#010418" }}>
+    <Stack alignItems="center" sx={{ backgroundColor: "#010418" }}>
       <Stack
         maxWidth="1368px"
-        width='100%'
+        width="100%"
         id={"contact-form"}
         direction={{ mobileP: "column", desktopS: "row" }}
         paddingTop={{ mobileP: "40px", tablet: "60px" }}

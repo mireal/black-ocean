@@ -5,11 +5,10 @@ import FooterSection from "../components/widgets/FooterSection";
 export default function RiskManagementPolicy() {
   return (
     <>
-      <Stack
-        alignItems='center'>
+      <Stack alignItems="center">
         <Box
           maxWidth="1368px"
-          width='100%'
+          width="100%"
           paddingX={{
             mobileP: "10px",
             mobileL: "16px",
@@ -33,7 +32,11 @@ export default function RiskManagementPolicy() {
           <Stack
             spacing="30px"
             paddingTop="40px"
-            paddingBottom={{ mobileP: "40px", tablet: "60px", desktopS: "80px" }}
+            paddingBottom={{
+              mobileP: "40px",
+              tablet: "60px",
+              desktopS: "80px",
+            }}
           >
             <Typography variant="h2" fontSize="34px" color="primary.main">
               Risk Management Policy
@@ -52,25 +55,25 @@ export default function RiskManagementPolicy() {
               <Typography variant="subtitle1" color="primary.contrastText">
                 <Stack gap="5px">
                   <Box>
-                    This Risk Management Policy forms part of Black Ocean s.r.o.’s
-                    governance and control arrangements.
+                    This Risk Management Policy forms part of Black Ocean
+                    s.r.o.’s governance and control arrangements.
                   </Box>
                   <Box>
-                    Risk management is not an isolated activity. It is one element
-                    together with planning, project and performance management of
-                    effective governance and management. The focus is on those
-                    risks that could disrupt the achievement of Black Ocean
-                    s.r.o.'s strategy.
+                    Risk management is not an isolated activity. It is one
+                    element together with planning, project and performance
+                    management of effective governance and management. The focus
+                    is on those risks that could disrupt the achievement of
+                    Black Ocean s.r.o.'s strategy.
                   </Box>
                   <Box>
                     The purpose of this policy and the supporting guidance is to
                     establish Black Ocean s.r.o.’s underlying approach to risk
-                    management by clarifying the roles and responsibilities of the
-                    Board of Directors, the Finance and Audit Committee, Senior
-                    Management and other staff. It also describes the context for
-                    risk management as part of the overall system of internal
-                    controls and arrangements for periodic review. It aims to
-                    support those staff with particular involvement in
+                    management by clarifying the roles and responsibilities of
+                    the Board of Directors, the Finance and Audit Committee,
+                    Senior Management and other staff. It also describes the
+                    context for risk management as part of the overall system of
+                    internal controls and arrangements for periodic review. It
+                    aims to support those staff with particular involvement in
                     anticipating, assessing and managing risks so that they can
                     take timely and well-founded risk-informed decisions.
                   </Box>
@@ -91,40 +94,42 @@ export default function RiskManagementPolicy() {
               <Typography variant="subtitle1" color="primary.contrastText">
                 <Stack gap="5px">
                   <Box>
-                    A risk is commonly defined as an effect of uncertainty on the
-                    achievement of objectives. In other words, risks are various
-                    events that can affect the achievement of objectives. Risk can
-                    have both negative and positive outcomes. Our aim is to manage
-                    the adverse effects and turn the risk into value. Risks are an
-                    everyday part of our activities. Our operations involve
-                    multiple partnerships, challenging environmental,
-                    organizational contexts and extensive geographic scope. The
-                    realization of our mission and strategy depends on our ability
-                    to recognise risks and to define suitable measures for their
-                    treatment. Effective risk management is about effective
-                    decision- making, not compliance. It is not limited to the
-                    identification and mitigation of negative risks, but also
-                    enables opportunities to be recognised that may involve some
-                    level of risk where they also have the potential to lead to
-                    positive outcomes, supporting the overall strategy.
+                    A risk is commonly defined as an effect of uncertainty on
+                    the achievement of objectives. In other words, risks are
+                    various events that can affect the achievement of
+                    objectives. Risk can have both negative and positive
+                    outcomes. Our aim is to manage the adverse effects and turn
+                    the risk into value. Risks are an everyday part of our
+                    activities. Our operations involve multiple partnerships,
+                    challenging environmental, organizational contexts and
+                    extensive geographic scope. The realization of our mission
+                    and strategy depends on our ability to recognise risks and
+                    to define suitable measures for their treatment. Effective
+                    risk management is about effective decision- making, not
+                    compliance. It is not limited to the identification and
+                    mitigation of negative risks, but also enables opportunities
+                    to be recognised that may involve some level of risk where
+                    they also have the potential to lead to positive outcomes,
+                    supporting the overall strategy.
                   </Box>
                   <Box>
                     Risk management refers to all activities performed by Black
                     Ocean s.r.o. to anticipate, identify, assess and control the
-                    uncertainties which may impact on Black Ocean s.r.o.'s ability
-                    to achieve its aims, objectives and opportunities. These will
-                    range from organization-wide to specific projects or
-                    programmes, to the individual.
+                    uncertainties which may impact on Black Ocean s.r.o.'s
+                    ability to achieve its aims, objectives and opportunities.
+                    These will range from organization-wide to specific projects
+                    or programmes, to the individual.
                   </Box>
                   <Box>
                     The risk management policy aims to demonstrate that Black
                     Ocean s.r.o. is acting appropriately to anticipate risks; to
-                    assess risks; to avoid excessive risk; to embrace necessary or
-                    desirable risks with appropriate safeguards; that its response
-                    to risk, whether by insurance, control measures or avoidance,
-                    is proportionate and effective; that responsible staff are
-                    equipped to take risk-based decisions with confidence; and
-                    that we are intelligent in applying our risk appetite.
+                    assess risks; to avoid excessive risk; to embrace necessary
+                    or desirable risks with appropriate safeguards; that its
+                    response to risk, whether by insurance, control measures or
+                    avoidance, is proportionate and effective; that responsible
+                    staff are equipped to take risk-based decisions with
+                    confidence; and that we are intelligent in applying our risk
+                    appetite.
                   </Box>
                 </Stack>
               </Typography>
@@ -143,52 +148,53 @@ export default function RiskManagementPolicy() {
               <Typography variant="subtitle1" color="primary.contrastText">
                 <Stack gap="5px">
                   <Box>
-                    In our work to achieve our ambition, four risks stand out. The
-                    first concerns our reputation. Our Mission centers on creating
-                    and sharing knowledge and delivering projects that have a real
-                    impact. So we must undertake research and knowledge work of
-                    the highest quality and secure maximum impact and influence
-                    for our activities. As such, our reputation for the quality of
-                    our work, our autonomy and ethical and intellectual integrity
-                    are of paramount importance. We will be bold in the nature of
-                    our work, in our technical thinking, in our methodologies and
-                    we will be innovative in how we seek to impact and influence.
-                    We will do everything we can to mitigate risks to our
-                    reputation.
+                    In our work to achieve our ambition, four risks stand out.
+                    The first concerns our reputation. Our Mission centers on
+                    creating and sharing knowledge and delivering projects that
+                    have a real impact. So we must undertake research and
+                    knowledge work of the highest quality and secure maximum
+                    impact and influence for our activities. As such, our
+                    reputation for the quality of our work, our autonomy and
+                    ethical and intellectual integrity are of paramount
+                    importance. We will be bold in the nature of our work, in
+                    our technical thinking, in our methodologies and we will be
+                    innovative in how we seek to impact and influence. We will
+                    do everything we can to mitigate risks to our reputation.
                   </Box>
                   <Box>
                     The second concerns our people. Certain parts of our work
                     takes place online and overseas in locations that are
-                    inherently risky. We are responsible for the well-being of our
-                    staff. We, therefore, seek to ensure that work with partners
-                    overseas and in particular, overseas travel for our own staff,
-                    is informed by robust risk assessments and that traveling
-                    staff are trained and supported in their individual journeys.
-                    We will not require staff to travel or work in areas where we
-                    assess the risks to be excessive.
+                    inherently risky. We are responsible for the well-being of
+                    our staff. We, therefore, seek to ensure that work with
+                    partners overseas and in particular, overseas travel for our
+                    own staff, is informed by robust risk assessments and that
+                    traveling staff are trained and supported in their
+                    individual journeys. We will not require staff to travel or
+                    work in areas where we assess the risks to be excessive.
                   </Box>
                   <Box>
-                    The third concerns our financial position. We will manage our
-                    income and control our costs, remain competitive whilst
-                    delivering well-managed projects and programmes on time and on
-                    budget. We will seek to minimize our financial exposure. We
-                    will not compromise our ethical standards to secure funding.
-                    We will not undertake work that compromises our financial
-                    solvency.
+                    The third concerns our financial position. We will manage
+                    our income and control our costs, remain competitive whilst
+                    delivering well-managed projects and programmes on time and
+                    on budget. We will seek to minimize our financial exposure.
+                    We will not compromise our ethical standards to secure
+                    funding. We will not undertake work that compromises our
+                    financial solvency.
                   </Box>
                   <Box>
-                    The fourth concerns the impact of our projects and programmes.
-                    Many of our services involve partners and collaborators often
-                    based online and overseas and/or operating in challenging
-                    environments. To do this well, we need to anticipate and
-                    manage all project and programme risks at the pre-proposal,
-                    proposal and inception stages. We need to make decisions about
-                    when to bid for funding and with whom, in good time but often
-                    on the basis of imperfect information. We need to be prepared
-                    to decide when we will take well-judged risks. when we will
-                    support responsible risk-taking and when we will not submit a
-                    funding proposal because of the risks. When we do, we must use
-                    relevant management information to track progress and identify
+                    The fourth concerns the impact of our projects and
+                    programmes. Many of our services involve partners and
+                    collaborators often based online and overseas and/or
+                    operating in challenging environments. To do this well, we
+                    need to anticipate and manage all project and programme
+                    risks at the pre-proposal, proposal and inception stages. We
+                    need to make decisions about when to bid for funding and
+                    with whom, in good time but often on the basis of imperfect
+                    information. We need to be prepared to decide when we will
+                    take well-judged risks. when we will support responsible
+                    risk-taking and when we will not submit a funding proposal
+                    because of the risks. When we do, we must use relevant
+                    management information to track progress and identify
                     difficulties. We will support our staff to do this well. We
                     will not undertake work where we assess the financial or
                     delivery risks to be too high. We will not compromise our
@@ -221,7 +227,9 @@ export default function RiskManagementPolicy() {
                       margin: 0,
                     }}
                   >
-                    <li>Addressing both value protection and value creation;</li>
+                    <li>
+                      Addressing both value protection and value creation;
+                    </li>
                     <li>
                       Ensuring that roles and responsibilities are explicit and
                       clear;
@@ -230,10 +238,13 @@ export default function RiskManagementPolicy() {
                       Ensuring that the process for managing risk is fit for
                       purpose;
                     </li>
-                    <li>Establishing legal compliance as a minimum standard.</li>
+                    <li>
+                      Establishing legal compliance as a minimum standard.
+                    </li>
                   </ul>
                   <Box>
-                    And will be embedded in our governance structures as follows:
+                    And will be embedded in our governance structures as
+                    follows:
                   </Box>
                   <ul
                     style={{
@@ -244,16 +255,17 @@ export default function RiskManagementPolicy() {
                   >
                     <li>
                       As the principal executive and policy-making body of Black
-                      Ocean s.r.o., the Board of Directors is responsible for the
-                      risk management policy and for assuring itself of the
+                      Ocean s.r.o., the Board of Directors is responsible for
+                      the risk management policy and for assuring itself of the
                       policy’s implementation.
                     </li>
                     <li>
-                      The Board is also responsible for defining our risk appetite
-                      and risk tolerance, ensuring that a sound system of internal
-                      control is in place that supports the achievement of
-                      policies, aims and objectives while safeguarding the public
-                      and other funds and assets for which it is responsible
+                      The Board is also responsible for defining our risk
+                      appetite and risk tolerance, ensuring that a sound system
+                      of internal control is in place that supports the
+                      achievement of policies, aims and objectives while
+                      safeguarding the public and other funds and assets for
+                      which it is responsible
                     </li>
                   </ul>
                 </Typography>
@@ -273,8 +285,8 @@ export default function RiskManagementPolicy() {
               <Stack gap="5px">
                 <Typography variant="subtitle1" color="primary.contrastText">
                   <Box>
-                    Black Ocean s.r.o.’s objectives in relation to risk management
-                    are to:
+                    Black Ocean s.r.o.’s objectives in relation to risk
+                    management are to:
                   </Box>
                   <ul
                     style={{
@@ -287,13 +299,13 @@ export default function RiskManagementPolicy() {
                     <li>
                       Adopt good practice in the anticipation, timely
                       identification, evaluation and cost-effective control of
-                      risk in carrying out both normal and extraordinary business
-                      activities.
+                      risk in carrying out both normal and extraordinary
+                      business activities.
                     </li>
                     <li>
-                      Ensure that adverse risks are either avoided, reduced to an
-                      acceptable level, or managed and contained; and to do so in
-                      good time and on a continuous basis.
+                      Ensure that adverse risks are either avoided, reduced to
+                      an acceptable level, or managed and contained; and to do
+                      so in good time and on a continuous basis.
                     </li>
                     <li>
                       Support individual members of staff and teams to take
@@ -311,17 +323,18 @@ export default function RiskManagementPolicy() {
                       capable of managing risk.
                     </li>
                     <li>
-                      Focus risk assessment and management on the highest level of
-                      threats to our ability to achieve our strategic objectives;
-                      and opportunities to promote them.
+                      Focus risk assessment and management on the highest level
+                      of threats to our ability to achieve our strategic
+                      objectives; and opportunities to promote them.
                     </li>
                     <li>
-                      Assure funders/investors that there is a robust approach in
-                      place to assess and manage risk.
+                      Assure funders/investors that there is a robust approach
+                      in place to assess and manage risk.
                     </li>
                   </ul>
                   <Box>
-                    And will be embedded in our governance structures as follows:
+                    And will be embedded in our governance structures as
+                    follows:
                   </Box>
                   <ul
                     style={{
@@ -332,16 +345,17 @@ export default function RiskManagementPolicy() {
                   >
                     <li>
                       As the principal executive and policy-making body of Black
-                      Ocean s.r.o., the Board of Directors is responsible for the
-                      risk management policy and for assuring itself of the
+                      Ocean s.r.o., the Board of Directors is responsible for
+                      the risk management policy and for assuring itself of the
                       policy’s implementation.
                     </li>
                     <li>
-                      The Board is also responsible for defining our risk appetite
-                      and risk tolerance, ensuring that a sound system of internal
-                      control is in place that supports the achievement of
-                      policies, aims and objectives while safeguarding the public
-                      and other funds and assets for which it is responsible
+                      The Board is also responsible for defining our risk
+                      appetite and risk tolerance, ensuring that a sound system
+                      of internal control is in place that supports the
+                      achievement of policies, aims and objectives while
+                      safeguarding the public and other funds and assets for
+                      which it is responsible
                     </li>
                   </ul>
                 </Typography>
@@ -366,10 +380,10 @@ export default function RiskManagementPolicy() {
                     manage the risks, whether these are positive or negative. To
                     support risk assessment and actions to be identified, Black
                     Ocean s.r.o. will develop documentation about each
-                    project/programme specifying the country of operation, partner
-                    exposure, any key risks (e.g. foreign exchange). It will also
-                    develop training and communications tools to support project
-                    managers to manage risk.
+                    project/programme specifying the country of operation,
+                    partner exposure, any key risks (e.g. foreign exchange). It
+                    will also develop training and communications tools to
+                    support project managers to manage risk.
                   </Box>
                   <Box>
                     We face specific operating risks that inform our approach to
@@ -431,7 +445,8 @@ export default function RiskManagementPolicy() {
                   <Box>
                     In each case, the “owner” of the risk should have in place
                     early warning mechanisms to alert Black Ocean s.r.o. so that
-                    remedial action can be taken to manage any potential hazards.
+                    remedial action can be taken to manage any potential
+                    hazards.
                   </Box>
                 </Typography>
               </Stack>
@@ -449,17 +464,18 @@ export default function RiskManagementPolicy() {
 
               <Typography variant="subtitle1" color="primary.contrastText">
                 Risks regarded as high or very high in impact and probability
-                should be identified in advance and a decision taken about whether
-                to continue with the activity and if so, how to manage it to
-                either realize the potential benefits or avoid the potential
-                downsides. Risks change and evolve as projects develop, before
-                bidding and throughout their funded life. Different risks will be
-                managed with a particular focus. Some will be addressed through
-                routine management, supported by Black Ocean s.r.o.’s systems,
-                procedures and policies. Black Ocean s.r.o.’s risk management
-                process has a particular role to play here in providing the forum
-                for regular review of project implementation, including emerging
-                issues that threaten successful delivery.
+                should be identified in advance and a decision taken about
+                whether to continue with the activity and if so, how to manage
+                it to either realize the potential benefits or avoid the
+                potential downsides. Risks change and evolve as projects
+                develop, before bidding and throughout their funded life.
+                Different risks will be managed with a particular focus. Some
+                will be addressed through routine management, supported by Black
+                Ocean s.r.o.’s systems, procedures and policies. Black Ocean
+                s.r.o.’s risk management process has a particular role to play
+                here in providing the forum for regular review of project
+                implementation, including emerging issues that threaten
+                successful delivery.
               </Typography>
             </Stack>
 
@@ -476,15 +492,15 @@ export default function RiskManagementPolicy() {
               <Typography variant="subtitle1" color="primary.contrastText">
                 We will monitor the risks on the Strategic Risk Register,
                 especially those with a “High” risk score. Clusters/units and
-                departments will be asked to review the operational risks captured
-                in their Registers termly. The Strategic Risk List is kept under
-                review by the Finance and Audit Committee, which meets regularly.
-                It is reported to the Board. We will learn from our experience of
-                risk management and seek to share issues and ideas with staff to
-                enable them to work effectively in a risk-based manner. This will
-                include learning from those risks that we take on knowingly, where
-                we believe that we could secure significant benefits if the risks
-                are handled responsibly.
+                departments will be asked to review the operational risks
+                captured in their Registers termly. The Strategic Risk List is
+                kept under review by the Finance and Audit Committee, which
+                meets regularly. It is reported to the Board. We will learn from
+                our experience of risk management and seek to share issues and
+                ideas with staff to enable them to work effectively in a
+                risk-based manner. This will include learning from those risks
+                that we take on knowingly, where we believe that we could secure
+                significant benefits if the risks are handled responsibly.
               </Typography>
             </Stack>
 
@@ -501,14 +517,14 @@ export default function RiskManagementPolicy() {
               <Typography variant="subtitle1" color="primary.contrastText">
                 <Stack gap="5px">
                   <Box>
-                    The Board is responsible for overseeing risk management with a
-                    scheme of delegation to the Finance Resources and Audit
-                    Committee and policy implementation by the Director and senior
-                    staff. All senior staff are responsible for encouraging good
-                    risk management practice within their areas of responsibility
-                    and all project managers (researchers and professionals) will
-                    need to have regard to risk for the projects that they lead or
-                    support
+                    The Board is responsible for overseeing risk management with
+                    a scheme of delegation to the Finance Resources and Audit
+                    Committee and policy implementation by the Director and
+                    senior staff. All senior staff are responsible for
+                    encouraging good risk management practice within their areas
+                    of responsibility and all project managers (researchers and
+                    professionals) will need to have regard to risk for the
+                    projects that they lead or support
                   </Box>
                   <Box>
                     The Board will:
@@ -521,15 +537,16 @@ export default function RiskManagementPolicy() {
                     >
                       <li>Approve the overall policy statement;</li>
                       <li>
-                        Offer periodic advice on risk appetite and risk tolerance;
+                        Offer periodic advice on risk appetite and risk
+                        tolerance;
                       </li>
                       <li>
-                        Satisfy itself about the assessment of strategic risks via
-                        annual consideration of the Strategic Risk List;
+                        Satisfy itself about the assessment of strategic risks
+                        via annual consideration of the Strategic Risk List;
                       </li>
                       <li>
-                        Monitor the management of significant risks to ensure that
-                        appropriate controls are in place;
+                        Monitor the management of significant risks to ensure
+                        that appropriate controls are in place;
                       </li>
                       <li>
                         Identify any strategic risks that require inclusion or
@@ -544,8 +561,8 @@ export default function RiskManagementPolicy() {
                       <li>
                         Satisfy itself that less significant risks are being
                         actively managed, and that appropriate controls are in
-                        place and working effectively to ensure the implementation
-                        of policies approved by the Board;
+                        place and working effectively to ensure the
+                        implementation of policies approved by the Board;
                       </li>
                       <li>
                         Review regularly the Institute’s approach to risk
@@ -568,13 +585,14 @@ export default function RiskManagementPolicy() {
                         and advise on any modifications to the policy;
                       </li>
                       <li>
-                        Receive advice from the Board on the need for inclusion or
-                        amendment of strategic risks in the Strategic Risk List;
+                        Receive advice from the Board on the need for inclusion
+                        or amendment of strategic risks in the Strategic Risk
+                        List;
                       </li>
                       <li>
-                        Ensure that adequate information is provided for the Board
-                        and its committees, as appropriate, on the status of risks
-                        and controls;
+                        Ensure that adequate information is provided for the
+                        Board and its committees, as appropriate, on the status
+                        of risks and controls;
                       </li>
                       <li>
                         Ensure that an annual report is provided to the Board on
@@ -597,8 +615,8 @@ export default function RiskManagementPolicy() {
                     >
                       <li>
                         Regularly review the Strategic Risk List and submit this
-                        to the F&A committee quarterly and thence bi-annually, to
-                        the Board;
+                        to the F&A committee quarterly and thence bi-annually,
+                        to the Board;
                       </li>
                       <li>Advise on modifications to the policy;</li>
                       <li>
@@ -606,42 +624,46 @@ export default function RiskManagementPolicy() {
                         Board as necessary;
                       </li>
                       <li>
-                        Decide on risk mitigation where Board or FAC action is not
-                        required;
+                        Decide on risk mitigation where Board or FAC action is
+                        not required;
                       </li>
                       <li>
                         Advise on Black Ocean s.r.o.’s appetite for risk and its
                         tolerance of risk;
                       </li>
                       <li>
-                        Inform all its strategic decisions with considerations of
-                        risk;
+                        Inform all its strategic decisions with considerations
+                        of risk;
                       </li>
                       <li>
                         Ensure other Sub Committees take appropriate steps in
                         respect of risk;
                       </li>
-                      <li>Keep the overall Strategic framework under review;</li>
                       <li>
-                        Advise on thresholds for risk assessment in proposals and
-                        projects;
+                        Keep the overall Strategic framework under review;
                       </li>
                       <li>
-                        Engage with the Institute’s internal and external auditors
-                        on internal controls;
+                        Advise on thresholds for risk assessment in proposals
+                        and projects;
                       </li>
-                      <li>Ensure appropriate training is available for staff;</li>
+                      <li>
+                        Engage with the Institute’s internal and external
+                        auditors on internal controls;
+                      </li>
+                      <li>
+                        Ensure appropriate training is available for staff;
+                      </li>
                       <li>Advise on any supporting policies;</li>
                       <li>Advise on thresholds for risk-based decisions;</li>
                       <li>
-                        Ensure appropriate insurance cover is in place to mitigate
-                        risks.
+                        Ensure appropriate insurance cover is in place to
+                        mitigate risks.
                       </li>
                     </ul>
                   </Box>
                   <Box>
-                    Country Directors, Cluster Directors and Heads of Professional
-                    Function will:
+                    Country Directors, Cluster Directors and Heads of
+                    Professional Function will:
                     <ul
                       style={{
                         listStyleType: "disc",
@@ -700,8 +722,8 @@ export default function RiskManagementPolicy() {
                       }}
                     >
                       <li>
-                        Take care to apply good risk management practice in their
-                        day-to-day work;
+                        Take care to apply good risk management practice in
+                        their day-to-day work;
                       </li>
                       <li>
                         Follow the principles and objectives set out in this
@@ -738,21 +760,22 @@ export default function RiskManagementPolicy() {
               <Stack gap="5px">
                 <Typography variant="subtitle1" color="primary.contrastText">
                   <Box>
-                    Internal controls encompass a review of the risks inherent in
-                    each activity. The Finance and Audit Committee report to the
-                    Board on the adequacy of internal controls. As part of its
-                    remit, the Committee reviews the work of the Internal and
-                    External Auditors and of Black Ocean s.r.o.'s management. The
-                    Committee is therefore well placed to advise the Board on the
-                    effectiveness of the internal control system.
+                    Internal controls encompass a review of the risks inherent
+                    in each activity. The Finance and Audit Committee report to
+                    the Board on the adequacy of internal controls. As part of
+                    its remit, the Committee reviews the work of the Internal
+                    and External Auditors and of Black Ocean s.r.o.'s
+                    management. The Committee is therefore well placed to advise
+                    the Board on the effectiveness of the internal control
+                    system.
                   </Box>
                   <Box>
-                    Currently Black Ocean s.r.o. has an external consultant which
-                    it contracts to review and report the effectiveness and
-                    reliability of the internal control system. As part of the
-                    annual audit, Black Ocean s.r.o.’s External Auditors will
-                    advise the Finance and Audit Committee on the operation of the
-                    internal financial controls.
+                    Currently Black Ocean s.r.o. has an external consultant
+                    which it contracts to review and report the effectiveness
+                    and reliability of the internal control system. As part of
+                    the annual audit, Black Ocean s.r.o.’s External Auditors
+                    will advise the Finance and Audit Committee on the operation
+                    of the internal financial controls.
                   </Box>
                 </Typography>
               </Stack>
@@ -771,8 +794,8 @@ export default function RiskManagementPolicy() {
               <Stack gap="5px">
                 <Typography variant="subtitle1" color="primary.contrastText">
                   <Box>
-                    The Board will periodically review its risk appetite and risk
-                    tolerance. The Board will also periodically review the
+                    The Board will periodically review its risk appetite and
+                    risk tolerance. The Board will also periodically review the
                     effectiveness of the internal control system and in doing so
                     will:
                     <ul
@@ -783,8 +806,8 @@ export default function RiskManagementPolicy() {
                       }}
                     >
                       <li>
-                        Review the previous year and examine the Institute’s track
-                        record on risk management;
+                        Review the previous year and examine the Institute’s
+                        track record on risk management;
                       </li>
                       <li>
                         Consider whether Black Ocean s.r.o. has made the right
@@ -796,8 +819,8 @@ export default function RiskManagementPolicy() {
                         coming year;
                       </li>
                       <li>
-                        Consider whether the current internal control arrangements
-                        are likely to be effective.
+                        Consider whether the current internal control
+                        arrangements are likely to be effective.
                       </li>
                     </ul>
                   </Box>
@@ -858,8 +881,8 @@ export default function RiskManagementPolicy() {
 
                 <Typography variant="subtitle1" color="primary.contrastText">
                   <Box>
-                    Most relevant authorities on risk management advocate two main
-                    parameters for assessing risks. The parameters are:
+                    Most relevant authorities on risk management advocate two
+                    main parameters for assessing risks. The parameters are:
                     <ul
                       style={{
                         listStyleType: "disc",
@@ -873,10 +896,11 @@ export default function RiskManagementPolicy() {
                       </li>
                       <li>
                         These almost always focus on risk mitigation and
-                        management of the possible/likely “downsides” rather than
-                        of the possible/likely “upsides” although the idea of
-                        focusing resources on the most risky can apply to risks to
-                        be embraced as well as to those to be managed/mitigated.
+                        management of the possible/likely “downsides” rather
+                        than of the possible/likely “upsides” although the idea
+                        of focusing resources on the most risky can apply to
+                        risks to be embraced as well as to those to be
+                        managed/mitigated.
                       </li>
                       <li>
                         Black Ocean s.r.o. will use a traffic light system to
@@ -898,15 +922,15 @@ export default function RiskManagementPolicy() {
                         funder/partner relations may be affected.
                       </li>
                       <li>
-                        High - medium-term disruption; adverse publicity; probable
-                        litigation and difficult to defend; significant financial
-                        loss; funder/partner relations affected.
+                        High - medium-term disruption; adverse publicity;
+                        probable litigation and difficult to defend; significant
+                        financial loss; funder/partner relations affected.
                       </li>
                       <li>
-                        Very high - sustained disruption; significant reputational
-                        damage; litigation highly likely and costly; significant
-                        financial loss; funder/partner relations seriously
-                        affected.
+                        Very high - sustained disruption; significant
+                        reputational damage; litigation highly likely and
+                        costly; significant financial loss; funder/partner
+                        relations seriously affected.
                       </li>
                       <li>
                         Likelihood:

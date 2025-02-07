@@ -4,13 +4,10 @@ import FooterInfoLinks from "../features/FooterInfoLinks";
 
 function FooterSection() {
   return (
-    <Stack
-      alignItems='center'
-      bgcolor="#010418"
-    >
+    <Stack alignItems="center" bgcolor="#010418">
       <Box
         maxWidth="1368px"
-        width='100%'
+        width="100%"
         paddingX={{
           mobileP: "10px",
           mobileL: "16px",
