@@ -1,10 +1,11 @@
-import { Box, Divider, Grid2, Stack, Typography } from "@mui/material";
-import AdvantageRectangle from "../entities/AdvantageRectangle";
+import { Box, Grid2, Stack, Typography } from "@mui/material";
 import StyledButtonDark from "../shared/StyledButtonDark";
 import { useTranslation } from "react-i18next";
+import WhyBlock from "../features/WhyBlock";
 
 function WhySection() {
   const { t } = useTranslation();
+  const keys = ["first", "second", "third", "fourth"];
 
   return (
     <Stack alignItems="center">
@@ -59,173 +60,11 @@ function WhySection() {
               </Typography>
             </Box>
 
-            <Stack>
-              <Box>
-                <Divider />
+            <Stack gap="20px">
+              {keys.map((key, index) => (
+                <WhyBlock key={key} keyName={key} rectangles={index + 1} />
+              ))}
 
-                <Stack
-                  direction={{ mobileP: "column", tablet: "row" }}
-                  spacing={{ mobileP: "15px", tablet: "60px" }}
-                  useFlexGap
-                  padding="20px 10px"
-                >
-                  <Box
-                    display="flex"
-                    justifyContent="space-between"
-                    flexDirection={{ mobileP: "column", tablet: "row" }}
-                    gap="40px"
-                    flex={1}
-                  >
-                    <AdvantageRectangle filledRectangles={1} />
-
-                    <Typography
-                      variant="body1"
-                      fontSize="18px"
-                      fontWeight="600"
-                      color="primary.main"
-                    >
-                      {t("why.blocks.first.title")}
-                    </Typography>
-                  </Box>
-
-                  <Box flex={1}>
-                    <Typography
-                      variant="body1"
-                      color="primary.contrastText"
-                      fontSize="18px"
-                      lineHeight="125%"
-                    >
-                      {t("why.blocks.first.description")}
-                    </Typography>
-                  </Box>
-                </Stack>
-              </Box>
-
-              {/* second */}
-              <Box>
-                <Divider />
-
-                <Stack
-                  direction={{ mobileP: "column", tablet: "row" }}
-                  spacing={{ mobileP: "15px", tablet: "60px" }}
-                  useFlexGap
-                  padding="20px 10px"
-                >
-                  <Box
-                    display="flex"
-                    justifyContent="space-between"
-                    flexDirection={{ mobileP: "column", tablet: "row" }}
-                    gap="40px"
-                    flex={1}
-                  >
-                    <AdvantageRectangle filledRectangles={2} />
-
-                    <Typography
-                      variant="body1"
-                      fontSize="18px"
-                      fontWeight="600"
-                      color="primary.main"
-                    >
-                      {t("why.blocks.second.title")}
-                    </Typography>
-                  </Box>
-
-                  <Box flex={1}>
-                    <Typography
-                      variant="body1"
-                      color="primary.contrastText"
-                      fontSize="18px"
-                      lineHeight="125%"
-                    >
-                      {t("why.blocks.second.description")}
-                    </Typography>
-                  </Box>
-                </Stack>
-              </Box>
-
-              {/* third */}
-              <Box>
-                <Divider />
-
-                <Stack
-                  direction={{ mobileP: "column", tablet: "row" }}
-                  spacing={{ mobileP: "15px", tablet: "60px" }}
-                  useFlexGap
-                  padding="20px 10px"
-                >
-                  <Box
-                    display="flex"
-                    justifyContent="space-between"
-                    flexDirection={{ mobileP: "column", tablet: "row" }}
-                    gap="40px"
-                    flex={1}
-                  >
-                    <AdvantageRectangle filledRectangles={3} />
-
-                    <Typography
-                      variant="body1"
-                      fontSize="18px"
-                      fontWeight="600"
-                      color="primary.main"
-                    >
-                      {t("why.blocks.third.title")}
-                    </Typography>
-                  </Box>
-
-                  <Box flex={1}>
-                    <Typography
-                      variant="body1"
-                      color="primary.contrastText"
-                      fontSize="18px"
-                      lineHeight="125%"
-                    >
-                      {t("why.blocks.third.description")}
-                    </Typography>
-                  </Box>
-                </Stack>
-              </Box>
-
-              {/* fourth */}
-              <Box>
-                <Divider />
-
-                <Stack
-                  direction={{ mobileP: "column", tablet: "row" }}
-                  spacing={{ mobileP: "15px", tablet: "60px" }}
-                  useFlexGap
-                  padding="20px 10px"
-                >
-                  <Box
-                    display="flex"
-                    justifyContent="space-between"
-                    flexDirection={{ mobileP: "column", tablet: "row" }}
-                    gap="40px"
-                    flex={1}
-                  >
-                    <AdvantageRectangle filledRectangles={4} />
-
-                    <Typography
-                      variant="body1"
-                      fontSize="18px"
-                      fontWeight="600"
-                      color="primary.main"
-                    >
-                      {t("why.blocks.fourth.title")}
-                    </Typography>
-                  </Box>
-
-                  <Box flex={1}>
-                    <Typography
-                      variant="body1"
-                      color="primary.contrastText"
-                      fontSize="18px"
-                      lineHeight="125%"
-                    >
-                      {t("why.blocks.fourth.description")}
-                    </Typography>
-                  </Box>
-                </Stack>
-              </Box>
               <StyledButtonDark sx={{ mt: "30px" }} href="#contact-form">
                 {t("why.button")}
               </StyledButtonDark>

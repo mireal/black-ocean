@@ -69,10 +69,7 @@ function AboutSection() {
           </Grid2>
 
           {/* text */}
-          <Grid2
-            size={1}
-            alignSelf="center"
-          >
+          <Grid2 size={1} alignSelf="center">
             <Typography
               variant="body1"
               color="primary.light"
