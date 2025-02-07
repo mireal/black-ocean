@@ -18,8 +18,9 @@ function Navbar() {
         
         width='100%'
       >
+        {/* logo */}
         <Grid2
-          size={{ mobileP: 6, desktopS: 3 }}
+          size={{ mobileP: 6, desktopS: 4 }}
           alignSelf={{ mobileP: "center", desktopS: "start" }}
         >
           <NavbarLogo />
@@ -27,8 +28,11 @@ function Navbar() {
 
         {/* switch language */}
         <Grid2
-          size={3}
-          sx={{ display: { mobileP: "none", desktopS: "block" } }}
+          size={2}
+          sx={{ 
+            display: { mobileP: "none", desktopS: "block" }, 
+            
+          }}
         >
           <Typography variant="body1" fontSize={14} fontWeight={600}>
             <LanguageButton />
@@ -47,6 +51,7 @@ function Navbar() {
               variant="h6"
               color="primary.main"
               textTransform="uppercase"
+              fontSize='14px'
               fontWeight="600"
               sx={{
                 "& a, & a:visited, & a:active": {
@@ -78,7 +83,10 @@ function Navbar() {
             justifyContent: "flex-end",
           }}
         >
-          <Typography variant="h5" fontWeight="600">
+          <Typography 
+          variant="h5" 
+          fontWeight="600"
+          fontSize='18px'>
             <Link
               component={"a"}
               href="tel:+420773635962"

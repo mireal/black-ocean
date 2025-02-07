@@ -136,7 +136,7 @@ function BurgerButtonMenu() {
               fontSize={{ mobileP: "28px", mobileL: "34px" }}
               fontWeight={500}
             >
-              <LanguageButton />
+              <LanguageButton gap="15px"/>
             </Typography>
           </Stack>
         </Box>

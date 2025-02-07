@@ -7,8 +7,6 @@ function HeroContent() {
 
   return (
     <>
-    {/* below navbar */}
-      
       <Box width='100%' height='100%'>
 
         {/* title */}
@@ -27,7 +25,12 @@ function HeroContent() {
           }}
         >
           <Box
-            width={"30vw"}
+            width={{
+              tablet: "199px",
+              desktopS: "315px",
+              desktopM: '460px',
+              desktopL: '451px'
+            }}
             sx={{ display: { mobileP: "none", tablet: "inline-block" } }}
           />
           {t("hero.title")}
@@ -52,6 +55,7 @@ function HeroContent() {
               fontSize={16}
               lineHeight={"125%"}
               fontWeight={600}
+              maxWidth={{ mobileP: '300px', mobileL: '365px', desktopS: '393px' }}
             >
               {t("hero.subtitle")}
             </Typography>
@@ -71,7 +75,7 @@ function HeroContent() {
               variant="text"
               endIcon={<ArrowDownwardIcon />}
               sx={{
-                paddingX: 0,
+                padding: 0,
                 textTransform: "none",
                 fontWeight: "600",
                 fontSize: "18px",
