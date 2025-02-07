@@ -19,7 +19,7 @@ function BridgifySection() {
       {/* section padding */}
       <Box
         id={"bridgify-section"}
-        maxWidth="1368px"
+        maxWidth="1440px"
         width="100%"
         paddingY={{ mobileP: "60px", tablet: "80px", desktopS: "120px" }}
         paddingX={{

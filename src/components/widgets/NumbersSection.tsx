@@ -9,14 +9,14 @@ function NumbersSection() {
   return (
     <Stack alignItems="center">
       <Box
-        maxWidth="1368px"
+        maxWidth="1440px"
         width="100%"
         paddingY={{ mobileP: "60px", tablet: "80px", desktopS: "120px" }}
         paddingX={{
           mobileP: "10px",
           mobileL: "16px",
           tablet: "20px",
-          desktopS: "40px",
+          desktopS: "36px",
         }}
       >
         {/* section title */}
@@ -30,6 +30,7 @@ function NumbersSection() {
             desktopM: "64px",
           }}
           textTransform="uppercase"
+          letterSpacing="-2px"
           noWrap
           mb={{ mobileP: "20px", tablet: "30px" }}
           display={{ mobileP: "block", desktopL: "flex" }}

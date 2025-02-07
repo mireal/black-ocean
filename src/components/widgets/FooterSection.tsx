@@ -6,7 +6,7 @@ function FooterSection() {
   return (
     <Stack alignItems="center" bgcolor="#010418">
       <Box
-        maxWidth="1368px"
+        maxWidth="1440px"
         width="100%"
         paddingX={{
           mobileP: "10px",
