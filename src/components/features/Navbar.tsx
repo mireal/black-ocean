@@ -14,7 +14,7 @@ function Navbar() {
         container
         wrap="nowrap"
         paddingTop={{ mobileP: 0, desktopS: "20px" }}
-        height={{ mobileP: "82px", desktopS: "166px" }}
+        height={{ mobileP: "82px", desktopS: "146px" }}
         
         width='100%'
       >

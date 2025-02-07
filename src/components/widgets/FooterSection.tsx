@@ -6,7 +6,7 @@ function FooterSection() {
   return (
     <Stack
       alignItems='center'
-      bgcolor="black"
+      bgcolor="#010418"
     >
       <Box
         maxWidth="1368px"

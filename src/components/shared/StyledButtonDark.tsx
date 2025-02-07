@@ -13,7 +13,7 @@ const StyledButtonDark = styled(Button)(({ theme }) => ({
   "&:hover": {
     backgroundColor: "white",
     border: `1px solid white`,
-    color: "black",
+    color: "#010418",
   },
 })) as typeof Button;
 

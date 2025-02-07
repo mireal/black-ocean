@@ -7,7 +7,6 @@ function HeroSection() {
     <>
       <Box
         height={"100vh"}
-        maxHeight='900px'
         width={"100vw"}
         display='flex'
         flexDirection='column'
@@ -44,7 +43,6 @@ function HeroSection() {
               position: "absolute",
               top: 0,
               height: "100vh",
-              maxHeight: '900px',
               right: 0,
             }}
           />
@@ -56,7 +54,6 @@ function HeroSection() {
               position: "absolute",
               top: 0,
               height: "100vh",
-              maxHeight: '900px',
               left: {
                 mobileP: 0,
                 tablet: "50%",
@@ -72,7 +69,6 @@ function HeroSection() {
               position: "absolute",
               top: 0,
               height: "100vh",
-              maxHeight: '900px',
               left: {
                 mobileP: '-100%',
                 tablet: "199px",

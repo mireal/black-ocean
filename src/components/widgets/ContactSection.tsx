@@ -8,7 +8,7 @@ function ContactSection() {
   return (
     <Stack
       alignItems='center'
-      sx={{ backgroundColor: "black" }}>
+      sx={{ backgroundColor: "#010418" }}>
       <Stack
         maxWidth="1368px"
         width='100%'
@@ -21,7 +21,7 @@ function ContactSection() {
           tablet: "20px",
           desktopM: "40px",
         }}
-        sx={{ backgroundColor: "black" }}
+        sx={{ backgroundColor: "#010418" }}
       >
         <Box flex={{ mobileP: "none", desktopS: 1 }} mb="20px">
           <Typography
