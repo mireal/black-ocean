@@ -12,7 +12,7 @@ const buttonStyles = {
   },
 };
 
-export default function LanguageButton() {
+export default function LanguageButton({gap='10px'}) {
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng: string) => {
@@ -20,7 +20,7 @@ export default function LanguageButton() {
   };
 
   return (
-    <Stack direction="row" alignItems="center" gap="13px">
+    <Stack direction="row" alignItems="center" gap={gap}>
       <Button
         variant="text"
         disableElevation
