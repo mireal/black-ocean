@@ -9,7 +9,7 @@ function NumbersSection() {
   return (
     <Stack alignItems="center">
       <Box
-        maxWidth="1368px"
+        maxWidth="1440px"
         width="100%"
         paddingY={{ mobileP: "60px", tablet: "80px", desktopS: "120px" }}
         paddingX={{
@@ -20,6 +20,7 @@ function NumbersSection() {
         }}
       >
         {/* section title */}
+
         <Typography
           variant="h2"
           color="primary.main"
@@ -30,34 +31,37 @@ function NumbersSection() {
             desktopM: "64px",
           }}
           textTransform="uppercase"
+          letterSpacing='-2px'
+          lineHeight="110%"
           noWrap
-          mb={{ mobileP: "20px", tablet: "30px" }}
-          display={{ mobileP: "block", desktopL: "flex" }}
-          justifyContent="space-between"
         >
           <Box
-            sx={{
-              textAlign: "left",
-              display: "inline-block",
-            }}
+            display='flex'
+            flexDirection='row'
+            flexWrap='wrap'
           >
-            {t("numbers.title 1")}
-          </Box>
-          <Box
-            display={{ mobileP: "none", mobileL: "inline-block" }}
-            marginX={{ mobileP: "30px", desktopL: 0 }}
-          >
-            /
-          </Box>
-          <Box
-            sx={{
-              display: { mobileP: "block", desktopL: "inline-block" },
-              textAlign: { mobileP: "left", mobileL: "right" },
-            }}
-          >
-            {t("numbers.title 2")}
+            <Box
+              display={{ mobileP: 'hidden', mobileL: 'inline' }}
+              flexBasis='auto'
+            >
+              {t('numbers.title 1')}
+            </Box>
+            <Box
+              paddingX='30px'
+              display={{ mobileP: 'none', mobileL: 'block' }}
+              flexBasis='auto'
+            >
+              /
+            </Box>
+            <Box 
+              flex='auto'
+              textAlign={{ mobileP: 'left', mobileL: 'right' }}
+            >
+              {t('numbers.title 2')}
+            </Box>
           </Box>
         </Typography>
+
 
         <Grid2 container columns={3}>
           <Grid2
