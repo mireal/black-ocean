@@ -8,7 +8,7 @@ function ContactSection() {
   return (
     <Stack alignItems="center" sx={{ backgroundColor: "#010418" }}>
       <Stack
-        maxWidth="1368px"
+        maxWidth="1440px"
         width="100%"
         id={"contact-form"}
         direction={{ mobileP: "column", desktopS: "row" }}

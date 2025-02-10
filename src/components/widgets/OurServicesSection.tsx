@@ -19,7 +19,7 @@ function OurServices() {
     <Stack alignItems="center">
       <Box
         id={"services-section"}
-        maxWidth="1368px"
+        maxWidth="1440px"
         width="100%"
         paddingY={{ mobileP: "60px", tablet: "80px", desktopS: "120px" }}
         paddingX={{

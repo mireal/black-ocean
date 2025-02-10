@@ -34,7 +34,7 @@ function HeroSection() {
           }}
         />
 
-        <Box maxWidth="1368px" position="relative" width="100%" height="100%">
+        <Box maxWidth="1440px" position="relative" width="100%" height="100%">
           {/* right corner */}
           <Divider
             orientation="vertical"

@@ -16,7 +16,7 @@ function NumbersSection() {
           mobileP: "10px",
           mobileL: "16px",
           tablet: "20px",
-          desktopS: "40px",
+          desktopS: "36px",
         }}
       >
         {/* section title */}
@@ -31,6 +31,7 @@ function NumbersSection() {
             desktopM: "64px",
           }}
           textTransform="uppercase"
+          whiteSpace={{ mobileP: "break-spaces", tablet: "nowrap" }}
           letterSpacing='-2px'
           lineHeight="110%"
           noWrap
@@ -39,6 +40,7 @@ function NumbersSection() {
             display='flex'
             flexDirection='row'
             flexWrap='wrap'
+            mb={{ mobileP: "20px", tablet: "30px" }}
           >
             <Box
               display={{ mobileP: 'hidden', mobileL: 'inline' }}

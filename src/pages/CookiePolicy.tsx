@@ -7,7 +7,7 @@ export default function CookiePolicy() {
     <>
       <Stack alignItems="center">
         <Box
-          maxWidth="1368px"
+          maxWidth="1440px"
           width="100%"
           paddingX={{
             mobileP: "10px",
