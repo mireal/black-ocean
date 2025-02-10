@@ -15,7 +15,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <SpeedInsights />
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter>
@@ -32,6 +31,7 @@ createRoot(document.getElementById("root")!).render(
             element={<TermsAndConditions />}
           />
         </Routes>
+        <SpeedInsights />
       </BrowserRouter>
     </ThemeProvider>
   </StrictMode>,

@@ -41,6 +41,8 @@ function BridgifySection() {
             desktopM: "64px",
           }}
           fontWeight="600"
+          letterSpacing="-2px"
+          lineHeight="110%"
           textTransform="uppercase"
         >
           {t("bridgify.title")}
@@ -80,6 +82,7 @@ function BridgifySection() {
               color="primary.contrastText"
               fontSize="18px"
               lineHeight="125%"
+              fontWeight="600"
             >
               <Box
                 display="flex"

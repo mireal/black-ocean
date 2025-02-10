@@ -77,7 +77,7 @@ function AboutSection() {
               fontWeight="600"
               textTransform="uppercase"
               textAlign={{ mobileP: "center", tablet: "left" }}
-              width={{ mobileP: "100%", displayS: "300px" }}
+              width={{ mobileP: "100%", desktopS: "300px" }}
             >
               {t("about.description")}
             </Typography>

@@ -32,38 +32,34 @@ function NumbersSection() {
           }}
           textTransform="uppercase"
           whiteSpace={{ mobileP: "break-spaces", tablet: "nowrap" }}
-          letterSpacing='-2px'
+          letterSpacing="-2px"
           lineHeight="110%"
           noWrap
         >
           <Box
-            display='flex'
-            flexDirection='row'
-            flexWrap='wrap'
+            display="flex"
+            flexDirection="row"
+            flexWrap="wrap"
             mb={{ mobileP: "20px", tablet: "30px" }}
           >
             <Box
-              display={{ mobileP: 'hidden', mobileL: 'inline' }}
-              flexBasis='auto'
+              display={{ mobileP: "hidden", mobileL: "inline" }}
+              flexBasis="auto"
             >
-              {t('numbers.title 1')}
+              {t("numbers.title 1")}
             </Box>
             <Box
-              paddingX='30px'
-              display={{ mobileP: 'none', mobileL: 'block' }}
-              flexBasis='auto'
+              paddingX="30px"
+              display={{ mobileP: "none", mobileL: "block" }}
+              flexBasis="auto"
             >
               /
             </Box>
-            <Box 
-              flex='auto'
-              textAlign={{ mobileP: 'left', mobileL: 'right' }}
-            >
-              {t('numbers.title 2')}
+            <Box flex="auto" textAlign={{ mobileP: "left", mobileL: "right" }}>
+              {t("numbers.title 2")}
             </Box>
           </Box>
         </Typography>
-
 
         <Grid2 container columns={3}>
           <Grid2
