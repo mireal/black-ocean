@@ -20,6 +20,7 @@ function NumbersSection() {
         }}
       >
         {/* section title */}
+
         <Typography
           variant="h2"
           color="primary.main"
@@ -31,38 +32,38 @@ function NumbersSection() {
           }}
           textTransform="uppercase"
           whiteSpace={{ mobileP: "break-spaces", tablet: "nowrap" }}
-          letterSpacing="-2px"
-          mb={{ mobileP: "20px", tablet: "30px" }}
-          display={{ mobileP: "block", desktopL: "flex" }}
-          justifyContent="space-between"
-          flexWrap="wrap"
+          letterSpacing='-2px'
+          lineHeight="110%"
+          noWrap
         >
           <Box
-            sx={{
-              textAlign: "left",
-              display: "inline-block",
-              flex: 1,
-            }}
+            display='flex'
+            flexDirection='row'
+            flexWrap='wrap'
+            mb={{ mobileP: "20px", tablet: "30px" }}
           >
-            {t("numbers.title 1")}
             <Box
-              display={{ mobileP: "none", mobileL: "inline-block" }}
-              paddingX={{ mobileP: "10px", desktopS: "15px", desktopL: "7px" }}
+              display={{ mobileP: 'hidden', mobileL: 'inline' }}
+              flexBasis='auto'
+            >
+              {t('numbers.title 1')}
+            </Box>
+            <Box
+              paddingX='30px'
+              display={{ mobileP: 'none', mobileL: 'block' }}
+              flexBasis='auto'
             >
               /
             </Box>
-          </Box>
-
-          <Box
-            sx={{
-              display: { mobileP: "block", desktopL: "inline-block" },
-              textAlign: { mobileP: "left", mobileL: "right" },
-              flex: 1,
-            }}
-          >
-            {t("numbers.title 2")}
+            <Box 
+              flex='auto'
+              textAlign={{ mobileP: 'left', mobileL: 'right' }}
+            >
+              {t('numbers.title 2')}
+            </Box>
           </Box>
         </Typography>
+
 
         <Grid2 container columns={3}>
           <Grid2
