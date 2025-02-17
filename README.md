@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# Black Ocean
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Black Ocean landing page. Built With [React](https://react.dev/), [Material-UI](https://mui.com/material-ui/), [Vite](https://vite.dev/)</br>
+Visit this page on [Vercel](https://black-ocean-two.vercel.app/)
 
-Currently, two official plugins are available:
+## Figma Design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+View the design prototype on [Figma](https://www.figma.com/design/WYH1il18O3AjkFngGWQtnQ/Black-Ocean-(Copy)?node-id=8-18&p=f&t=Mf0oJflvH1yUJ4ZU-0).
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Installation
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+1. Clone the repository:
+```bash
+git clone https://github.com/mireal/black-ocean.git
+```
+2. Navigate to the project directory:
+```bash
+cd black-ocean
+```
+3. Install the dependencies:
+```bash
+npm install
+```
+4. Start the development server:
+```bash
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
+5. Open your browser and visit:
+```bash
+http://localhost:3000.
 ```
